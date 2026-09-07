@@ -43,6 +43,7 @@ pip install math matplotlib numpy pandas statsmodels scipy
 | | Mode |  |  |
 
 | | Std. Dev. |  |  |
+
 4. EDA: Trực quan hóa và so sánh phân phối của các biến giữa Control và Treatment.
 5. Kiểm tra sự cân đối giữa control và treatment
 * Kiểm tra quy mô hai nhóm.
