@@ -50,6 +50,7 @@ Balance Check: Các đặc điểm ban đầu giữa hai nhóm Control và Treat
 |----------|-----------|---------|-----------|
 | Control | 3364 | 17505 | 0.192 |
 | Treatment | 4493 | 17495 | 0.286 |
+| Total | 7857 | 35000 | 0.224 |
 
 * Tính Absolute Difference và Relative Lift.
 
@@ -150,6 +151,10 @@ $$u_(1-\frac{\alpha}{2})$$ = u_0.975 = 1.96
 **Standard Error** = $$\sqrt{\frac{p_t*(1-p_t)}{n_t}+\frac{p_c*(1-p_c)}{n_c}}$$
 
 **Confidence Level** = (**Absolute Difference** - $$u_0.975$$***Standard Error** ; **Absolute Difference** + $$u_0.975$$***Standard Error**)
+
+**Confidence Level** = (0.084, 0.102)
+
+Với p-value = $$2.77*10^-93$$ $$\notin$$ (0.084, 0.102)
 
 * 
 * Đánh giá magnitude của treatment effect.
