@@ -140,14 +140,18 @@ p-value = 1.97
 
 Z-statistic = -14.23
 
-- 
-- Đánh giá kết quả dựa trên p-value và significance level.
-* Thực hiện statistical hypothesis testing cho từng giả thuyết.
-* Sử dụng Two-Proportion Z-Test cho Conversion Rate.
-* Sử dụng Welch's Two-Sample T-Test cho Deposit Amount.
-* Đánh giá kết quả dựa trên p-value và significance level.
 9. Khoảng tin cậy:
 * Tính 95% Confidence Interval cho sự khác biệt giữa hai nhóm.
+
+1 - $$\frac{\alpha}{2}$$ = 1 - $$\frac{0.5}{2}$$ = 0.975
+
+$$u_(1-\frac{\alpha}{2})$$ = u_0.975 = 1.96
+
+**Standard Error** = $$\sqrt{\frac{p_t*(1-p_t)}{n_t}+\frac{p_c*(1-p_c)}{n_c}}$$
+
+**Confidence Level** = (**Absolute Difference** - $$u_0.975$$***Standard Error** ; **Absolute Difference** + $$u_0.975$$***Standard Error**)
+
+* 
 * Đánh giá magnitude của treatment effect.
 10. Business Impact Analysis
 * Ước tính số lượng khách hàng chuyển đổi tăng thêm.
