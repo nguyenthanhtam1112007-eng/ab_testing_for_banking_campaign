@@ -92,6 +92,34 @@ $$\(\mu_T\)$$: Average Deposit Amount của Treatment
 $$\(\mu_C\)$$: Average Deposit Amount của Control
 
 8. A/B testing trên từng giả thuyết:
+
+8.1 Kiểm định giả thuyết Conversion (mục 7.1): Sử dụng Two-Proportion Z-Test
+
+Lựa chọn phương pháp kiểm định
+
+Conversion Rate được tính dựa trên biến opened_savings, chỉ nhận hai giá trị:
+
+1: Khách hàng mở Savings
+0: Khách hàng không mở Savings
+
+Do đó, Conversion Rate của mỗi nhóm có bản chất là một tỷ lệ (proportion). Mục tiêu là kiểm tra xem tỷ lệ mở Savings của Treatment có cao hơn Control hay không.
+
+Vì vậy, sử dụng Two-Proportion Z-Test để so sánh Conversion Rate giữa hai nhóm độc lập.
+
+**Significance level** : $$\alpha$$ = 0.05
+
+Nếu p-value < 0.05 → Bác bỏ $$\(H_0\)$$
+
+Nếu p-value ≥ 0.05 → Không đủ cơ sở bác bỏ $$H_0$$
+	​
+Sau khi chạy mô hình, ta thu được các kết quả:
+
+p-value = $$2.77*10^-93$$
+
+Z-statistic = -20.45 
+
+- 8.2 Kiểm định giả thuyết Deposit Amount (mục 7.2): Sử dụng Welch's Two-Sample T-Test
+- Đánh giá kết quả dựa trên p-value và significance level.
 * Thực hiện statistical hypothesis testing cho từng giả thuyết.
 * Sử dụng Two-Proportion Z-Test cho Conversion Rate.
 * Sử dụng Welch's Two-Sample T-Test cho Deposit Amount.
