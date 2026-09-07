@@ -122,7 +122,7 @@ Z-statistic = -20.45
 
 Lựa chọn phương pháp kiểm định
 
-deposit_amount là biến định lượng liên tục, thể hiện số tiền khách hàng gửi vào sản phẩm Savings. Mục tiêu là kiểm tra liệu số tiền gửi trung bình giữa nhóm Treatment và Control có khác nhau hay không.
+Deposit amount là biến định lượng liên tục, thể hiện số tiền khách hàng gửi vào sản phẩm Savings. Mục tiêu là kiểm tra liệu số tiền gửi trung bình giữa nhóm Treatment và Control có khác nhau hay không.
 
 Do đó, sử dụng Independent Two-Sample T-Test để so sánh giá trị trung bình của hai nhóm độc lập.
 
@@ -139,7 +139,6 @@ Sau khi chạy mô hình, ta thu được các kết quả:
 p-value = 1.97
 
 Z-statistic = -14.23
-
 
 - 
 - Đánh giá kết quả dựa trên p-value và significance level.
