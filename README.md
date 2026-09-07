@@ -118,7 +118,30 @@ p-value = $$2.77*10^-93$$
 
 Z-statistic = -20.45 
 
-- 8.2 Kiểm định giả thuyết Deposit Amount (mục 7.2): Sử dụng Welch's Two-Sample T-Test
+8.2 Kiểm định giả thuyết Deposit Amount (mục 7.2): Sử dụng Welch's Two-Sample T-Test
+
+Lựa chọn phương pháp kiểm định
+
+deposit_amount là biến định lượng liên tục, thể hiện số tiền khách hàng gửi vào sản phẩm Savings. Mục tiêu là kiểm tra liệu số tiền gửi trung bình giữa nhóm Treatment và Control có khác nhau hay không.
+
+Do đó, sử dụng Independent Two-Sample T-Test để so sánh giá trị trung bình của hai nhóm độc lập.
+
+Trong project này, sử dụng Welch's Two-Sample T-Test, vì phương pháp này không yêu cầu giả định phương sai của hai nhóm bằng nhau và phù hợp khi phương sai giữa hai nhóm có thể khác nhau.
+
+**Significance level** : $$\alpha$$ = 0.05
+
+Nếu p-value < 0.05 → Bác bỏ $$\(H_0\)$$
+
+Nếu p-value ≥ 0.05 → Không đủ cơ sở bác bỏ $$H_0$$
+	​
+Sau khi chạy mô hình, ta thu được các kết quả:
+
+p-value = 1.97
+
+Z-statistic = -14.23
+
+
+- 
 - Đánh giá kết quả dựa trên p-value và significance level.
 * Thực hiện statistical hypothesis testing cho từng giả thuyết.
 * Sử dụng Two-Proportion Z-Test cho Conversion Rate.
