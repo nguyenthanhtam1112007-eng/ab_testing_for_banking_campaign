@@ -19,10 +19,10 @@ pip install math matplotlib numpy pandas statsmodels scipy
 | Variable | Statistic | Control | Treatment |
 |----------|-----------|---------|-----------|
 | Age | Mean | 38.31 | 38.23 |
-| | Median | 38 | 38 |
-| | Std. Dev. | 11.55 | 11.55 |
+|  Median | 38 | 38 |
+|  Std. Dev. | 11.55 | 11.55 |
 | Income | Mean | 16.58 | 16.64 |
-| | Median | 16.50 | 16.60 |
+|  Median | 16.50 | 16.60 |
 | | Std. Dev. | 6.00 | 6.10 |
 | Monthly Spending | Mean | 9.21 | 9.27 |
 | | Median | 9.10 | 9.15 |
