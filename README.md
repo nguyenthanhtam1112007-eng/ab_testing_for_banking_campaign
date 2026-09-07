@@ -35,6 +35,8 @@ pip install math matplotlib numpy pandas statsmodels scipy
   Số lượng mẫu ở control là 17505
 
   Số lượng mẫu ở treatment là 17495
+
+  Tổng cộng 35.000 mẫu, tỷ lệ là khoảng 50,01% / 49,99% — hai nhóm gần như bằng nhau tuyệt đối. Đây là dấu hiệu tốt cho việc phân bổ ngẫu nhiên (random assignment) đã hoạt động đúng.
   
 * Kiểm tra sự cân bằng về các đặc điểm ban đầu giữa Control và Treatment.
 * Đảm bảo sự khác biệt về conversion không đơn thuần đến từ sự khác biệt ban đầu giữa hai nhóm.
