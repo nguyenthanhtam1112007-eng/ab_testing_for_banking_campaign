@@ -20,16 +20,13 @@ pip install math matplotlib numpy pandas statsmodels scipy
 |----------|-----------|---------|-----------|
 | Age | Mean | 38.31 | 38.23 |
 | | Median | 38 | 38 |
-| | Mode |  |  |
-| | Std. Dev. |  |  |
-| Income | Mean |  |  |
-| | Median |  |  |
-| | Mode |  |  |
-| | Std. Dev. |  |  |
-| Monthly Spending | Mean |  |  |
-| | Median |  |  |
-| | Mode |  |  |
-| | Std. Dev. |  |  |
+| | Std. Dev. | 11.55 | 11.55 |
+| Income | Mean | 16.58 | 16.64 |
+| | Median | 16.50 | 16.60 |
+| | Std. Dev. | 6.00 | 6.10 |
+| Monthly Spending | Mean | 9.21 | 9.27 |
+| | Median | 9.10 | 9.15 |
+| | Std. Dev. | 4.96 | 5.02 |
 
 4. EDA: Trực quan hóa và so sánh phân phối của các biến giữa Control và Treatment.
 5. Kiểm tra sự cân đối giữa control và treatment
