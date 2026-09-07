@@ -117,7 +117,13 @@ Sau khi chạy mô hình, ta thu được các kết quả:
 
 p-value = $$2.77*10^-93$$
 
-Z-statistic = -20.45 
+Z-statistic = 20.45
+
+Miền bác bỏ của 7.1: ($$u_{1-\alpha}$$; $$+\infty$$) = (1.645; $$+\infty$$)
+
+Z-statistics = 20.45 $$\in$$ (1.645; $$+\infty$$)
+
+Vậy có thể bác bỏ giả định $$H_0$$ và chấp nhận giả thuyết $$H_1$$.
 
 8.2 Kiểm định giả thuyết Deposit Amount (mục 7.2): Sử dụng Welch's Two-Sample T-Test
 
@@ -143,6 +149,12 @@ Z-statistic = -14.23
 
 9. Khoảng tin cậy:
 * Tính 95% Confidence Interval cho sự khác biệt giữa hai nhóm.
+
+Miền bác bỏ của 7.1: ($$u_{1-\alpha}$$; $$+\infty$$) = (1.645; $$+\infty$$)
+
+Z-statistics = 20.45 $$\in$$ (1.645; $$+\infty$$)
+
+Vậy có thể bác bỏ giả định $$H_0$$ và chấp nhận giả thuyết $$H_1$$. Có cơ sở để cho rằng conversion rate của treatment cao hơn conversion rate của control
 
 1 - $$\frac{\alpha}{2}$$ = 1 - $$\frac{0.5}{2}$$ = 0.975
 
