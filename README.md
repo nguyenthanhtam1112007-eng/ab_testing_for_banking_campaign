@@ -136,7 +136,7 @@ Do đó, sử dụng Independent Two-Sample T-Test để so sánh giá trị tru
 Trong project này, sử dụng Welch's Two-Sample T-Test, vì phương pháp này không yêu cầu giả định phương sai của hai nhóm bằng nhau và phù hợp khi phương sai giữa hai nhóm có thể khác nhau.
 
 |  | Phương sai | Trung bình | Số lượng mẫu |
-|----------|-----------|-----------|
+|----------|-----------|-----------|-----------|
 | Treatment | 51.71 | 11.85 | 4993 |
 | Control | 31.97 | 9.85 | 3364 |
 
@@ -152,16 +152,16 @@ p-value = 1.97
 
 Z-statistic = -14.23
 
+Miền bác bỏ giả thuyết là ($$-\infty$$, $$-u_{1-\frac{\alpha}{2}}$$) $$\cup$$ ($$u_{1+\frac{\alpha}{2}}$$, $$+\infty$$) = ($$-\infty$$, $$1.96$$) $$\cup$$ ($$1.96$$, $$+\infty$$)
+
+Z-statistic = -14.23 $$\in$$ ($$-\infty$$, $$-1.96$$) $$\cup$$ ($$1.96$$, $$+\infty$$)
+
+Vậy bác bỏ giả thuyết $$H_0$$ rằng trung bình tiền gửi trong tài khoản của nhóm Treatment bằng với nhóm Control.
+
 9. Khoảng tin cậy:
 * Tính 95% Confidence Interval cho sự khác biệt giữa hai nhóm.
 
-Miền bác bỏ của 7.1: ($$u_{1-\alpha}$$; $$+\infty$$) = (1.645; $$+\infty$$)
-
-Z-statistics = 20.45 $$\in$$ (1.645; $$+\infty$$)
-
-Vậy có thể bác bỏ giả định $$H_0$$ và chấp nhận giả thuyết $$H_1$$. Có cơ sở để cho rằng conversion rate của treatment cao hơn conversion rate của control
-
-1 - $$\frac{\alpha}{2}$$ = 1 - $$\frac{0.5}{2}$$ = 0.975
+1 - $$\frac{\alpha}{2}$$ = 1 - $$\frac{0.5}{2}$$ = $$0.975$$
 
 $$u_(1-\frac{\alpha}{2})$$ = u_0.975 = 1.96
 
