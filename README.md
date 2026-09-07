@@ -37,6 +37,8 @@ pip install math matplotlib numpy pandas statsmodels scipy
   Số lượng mẫu ở treatment là 17495
 
   Tổng cộng 35.000 mẫu, tỷ lệ là khoảng 50,01% / 49,99% — hai nhóm gần như bằng nhau tuyệt đối. Đây là dấu hiệu tốt cho việc phân bổ ngẫu nhiên (random assignment) đã hoạt động đúng.
+
+  Balance Check: Các đặc điểm ban đầu giữa hai nhóm Control và Treatment có sự tương đồng cao. Mean, Median và Standard Deviation của Age, Income và Monthly Spending giữa hai nhóm chỉ có sự chênh lệch nhỏ. Do đó, hai nhóm được xem là tương đối cân bằng về các đặc điểm cơ bản và có thể tiếp tục thực hiện A/B testing để đánh giá hiệu quả của chiến dịch.
   
 * Kiểm tra sự cân bằng về các đặc điểm ban đầu giữa Control và Treatment.
 * Đảm bảo sự khác biệt về conversion không đơn thuần đến từ sự khác biệt ban đầu giữa hai nhóm.
