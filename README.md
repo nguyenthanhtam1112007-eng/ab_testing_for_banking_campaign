@@ -15,19 +15,32 @@ pip install math matplotlib numpy pandas statsmodels scipy
 * Phân chia người dùng thành 2 nhóm gồm control và treatment bằng SQL.
 * Trong file Excel savings_notificaion_campaign đã chứa 2 subsheet của treatment và control
 3. Thống kê mô tả: So sánh đặc điểm cơ bản của các nhóm trung bình, trung vị, mode, độ lệch chuẩn của độ tuổi, tiền lương và chi tiêu hàng tháng của hai nhóm control và treatment
-| Variable | Statistic | Control | Treatment | \n
-|----------|-----------|---------|-----------| \n
-| Age | Mean | 38.31 | 38.23 | \n
-| | Median | 38 | 38 | \n
-| | Mode |  |  | \n
-| | Std. Dev. |  |  | \n
-| Income | Mean |  |  | \n
-| | Median |  |  | \n
-| | Mode |  |  | \n
-| | Std. Dev. |  |  | \n
+| Variable | Statistic | Control | Treatment |
+
+|----------|-----------|---------|-----------| 
+
+| Age | Mean | 38.31 | 38.23 | 
+
+| | Median | 38 | 38 | 
+
+| | Mode |  |  | 
+
+| | Std. Dev. |  |  |
+
+| Income | Mean |  |  | 
+
+| | Median |  |  | 
+
+| | Mode |  |  | 
+
+| | Std. Dev. |  |  | 
+
 | Monthly Spending | Mean |  |  |
+
 | | Median |  |  |
+
 | | Mode |  |  |
+
 | | Std. Dev. |  |  |
 4. EDA: Trực quan hóa và so sánh phân phối của các biến giữa Control và Treatment.
 5. Kiểm tra sự cân đối giữa control và treatment
