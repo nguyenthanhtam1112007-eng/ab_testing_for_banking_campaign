@@ -34,10 +34,10 @@ pip install math matplotlib numpy pandas statsmodels scipy
 * Tính 95% Confidence Interval cho sự khác biệt giữa hai nhóm.
 * Đánh giá magnitude của treatment effect.
 10. Business Impact Analysis
-Ước tính số lượng khách hàng chuyển đổi tăng thêm.
-So sánh tổng tiền gửi và tiền gửi trung bình.
-Ước tính incremental deposit từ chiến dịch.
+* Ước tính số lượng khách hàng chuyển đổi tăng thêm.
+* So sánh tổng tiền gửi và tiền gửi trung bình.
+* Ước tính incremental deposit từ chiến dịch.
 11. Đưa ra định hướng kinh doanh:
-Đánh giá liệu chiến dịch có nên được triển khai rộng hơn hay không.
-Đề xuất hướng tối ưu chiến dịch dựa trên kết quả A/B Testing.
+* Đánh giá liệu chiến dịch có nên được triển khai rộng hơn hay không.
+* Đề xuất hướng tối ưu chiến dịch dựa trên kết quả A/B Testing.
 ## Ghi chú
