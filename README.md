@@ -59,7 +59,7 @@ Balance Check: Các đặc điểm ban đầu giữa hai nhóm Control và Treat
 
 7. Lập giả thuyết:
   
-7.1 Conversion: Liệu thông báo có làm tăng tỷ lệ mở tài khoản không?
+  7.1 Conversion: Liệu thông báo có làm tăng tỷ lệ mở tài khoản không?
 
 H₀ (Null Hypothesis): Tỷ lệ mở tài khoản của nhóm Treatment bằng nhóm Control.
 
@@ -75,7 +75,21 @@ $$\(p_T\)$$: Conversion Rate của Treatment
 
 $$\(p_C\)$$: Conversion Rate của Control
 
-7.2 Deposit amount: Liệu thông báo có làm tăng số tiền khách hàng gửi vào tài khoản hay không?
+  7.2 Deposit amount: Liệu thông báo có làm tăng số tiền khách hàng gửi vào tài khoản hay không?
+
+H₀: Số tiền gửi trung bình của Treatment bằng Control.
+
+$$ H_0: \mu_T = \mu_C $$
+
+H₁: Số tiền gửi trung bình của Treatment khác Control.
+
+$$ H_1: \mu_T \neq \mu_C $$
+
+Trong đó:
+
+$$\(\mu_T\)$$: Average Deposit Amount của Treatment
+
+$$\(\mu_C\)$$: Average Deposit Amount của Control
 
 8. A/B testing trên từng giả thuyết:
 * Thực hiện statistical hypothesis testing cho từng giả thuyết.
