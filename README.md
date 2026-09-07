@@ -135,10 +135,10 @@ Do đó, sử dụng Independent Two-Sample T-Test để so sánh giá trị tru
 
 Trong project này, sử dụng Welch's Two-Sample T-Test, vì phương pháp này không yêu cầu giả định phương sai của hai nhóm bằng nhau và phù hợp khi phương sai giữa hai nhóm có thể khác nhau.
 
-|  | Phương sai |
-|----------|-----------|
-| Treatment | 43.40 |
-| Control | 21.19 |
+|  | Phương sai | Trung bình |
+|----------|-----------|-----------|
+| Treatment | 43.40 | 3.38 |
+| Control | 21.19 | 1.89 |
 
 **Significance level** : $$\alpha$$ = 0.05
 
