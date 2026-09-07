@@ -12,8 +12,23 @@ pip install math matplotlib numpy pandas statsmodels scipy
 # Quy trình phân tích
 1. Thu thập và chuẩn bị dữ liệu: Tạo một bộ dữ liệu synthetic để dễ dàng tính toán hơn.
 2. Lọc dữ liệu:
-* Phân chia người dùng thành 2 nhóm gồm control và treatment bằng SQL
+* Phân chia người dùng thành 2 nhóm gồm control và treatment bằng SQL.
+* Trong file Excel savings_notificaion_campaign đã chứa 2 subsheet của treatment và control
 3. Thống kê mô tả: So sánh đặc điểm cơ bản của các nhóm trung bình, trung vị, mode, độ lệch chuẩn của độ tuổi, tiền lương và chi tiêu hàng tháng của hai nhóm control và treatment
+| Variable | Statistic | Control | Treatment |
+|----------|-----------|---------|-----------|
+| Age | Mean |  |  |
+| | Median |  |  |
+| | Mode |  |  |
+| | Std. Dev. |  |  |
+| Income | Mean |  |  |
+| | Median |  |  |
+| | Mode |  |  |
+| | Std. Dev. |  |  |
+| Monthly Spending | Mean |  |  |
+| | Median |  |  |
+| | Mode |  |  |
+| | Std. Dev. |  |  |
 4. EDA: Trực quan hóa và so sánh phân phối của các biến giữa Control và Treatment.
 5. Kiểm tra sự cân đối giữa control và treatment
 * Kiểm tra quy mô hai nhóm.
