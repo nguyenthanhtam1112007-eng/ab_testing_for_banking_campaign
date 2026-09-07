@@ -52,9 +52,31 @@ Balance Check: Các đặc điểm ban đầu giữa hai nhóm Control và Treat
 | Treatment | 4493 | 17495 | 0.286 |
 
 * Tính Absolute Difference và Relative Lift.
+
+**Absolute Difference** = Conversion rate treatment - Conversion rate control = 0.093
+
+**Relative Lift** = $$\frac{Absolute Difference}{Conversion rate control}$$ = 0.485
+
 7. Lập giả thuyết:
-7.1 Conversion: Liệu thông báo có làm tăng tỷ lệ mở tài khoản không
-7.2 Deposit amount: Họ gửi bao nhiêu tiền vào tài khoản
+  
+7.1 Conversion: Liệu thông báo có làm tăng tỷ lệ mở tài khoản không?
+
+H₀ (Null Hypothesis): Tỷ lệ mở tài khoản của nhóm Treatment bằng nhóm Control.
+
+$$ H_0: p_T = p_C $$
+
+H₁ (Alternative Hypothesis): Tỷ lệ mở tài khoản của nhóm Treatment cao hơn nhóm Control.
+
+$$ H_1: p_T > p_C $$
+
+Trong đó:
+
+$$\(p_T\)$$: Conversion Rate của Treatment
+
+$$\(p_C\)$$: Conversion Rate của Control
+
+7.2 Deposit amount: Liệu thông báo có làm tăng số tiền khách hàng gửi vào tài khoản hay không?
+
 8. A/B testing trên từng giả thuyết:
 * Thực hiện statistical hypothesis testing cho từng giả thuyết.
 * Sử dụng Two-Proportion Z-Test cho Conversion Rate.
