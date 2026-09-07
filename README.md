@@ -31,6 +31,8 @@ pip install math matplotlib numpy pandas statsmodels scipy
 4. EDA: Trực quan hóa và so sánh phân phối của các biến giữa Control và Treatment.
 5. Kiểm tra sự cân đối giữa control và treatment
 * Kiểm tra quy mô hai nhóm.
+  Số lượng mẫu ở control là 17505
+  Số lượng mẫu ở treatment là 17495
 * Kiểm tra sự cân bằng về các đặc điểm ban đầu giữa Control và Treatment.
 * Đảm bảo sự khác biệt về conversion không đơn thuần đến từ sự khác biệt ban đầu giữa hai nhóm.
 6. Phân tích dữ liệu:
