@@ -17,31 +17,18 @@ pip install math matplotlib numpy pandas statsmodels scipy
 3. Thống kê mô tả: So sánh đặc điểm cơ bản của các nhóm trung bình, trung vị, mode, độ lệch chuẩn của độ tuổi, tiền lương và chi tiêu hàng tháng của hai nhóm control và treatment
 
 | Variable | Statistic | Control | Treatment |
-
-|----------|-----------|---------|-----------| 
-
-| Age | Mean | 38.31 | 38.23 | 
-
-| | Median | 38 | 38 | 
-
-| | Mode |  |  | 
-
-| | Std. Dev. |  |  |
-
-| Income | Mean |  |  | 
-
-| | Median |  |  | 
-
-| | Mode |  |  | 
-
-| | Std. Dev. |  |  | 
-
-| Monthly Spending | Mean |  |  |
-
-| | Median |  |  |
-
+|----------|-----------|---------|-----------|
+| Age | Mean | 38.31 | 38.23 |
+| | Median | 38 | 38 |
 | | Mode |  |  |
-
+| | Std. Dev. |  |  |
+| Income | Mean |  |  |
+| | Median |  |  |
+| | Mode |  |  |
+| | Std. Dev. |  |  |
+| Monthly Spending | Mean |  |  |
+| | Median |  |  |
+| | Mode |  |  |
 | | Std. Dev. |  |  |
 
 4. EDA: Trực quan hóa và so sánh phân phối của các biến giữa Control và Treatment.
