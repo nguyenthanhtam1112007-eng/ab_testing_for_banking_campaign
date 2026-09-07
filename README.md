@@ -15,6 +15,7 @@ pip install math matplotlib numpy pandas statsmodels scipy
 * Phân chia người dùng thành 2 nhóm gồm control và treatment bằng SQL.
 * Trong file Excel savings_notificaion_campaign đã chứa 2 subsheet của treatment và control
 3. Thống kê mô tả: So sánh đặc điểm cơ bản của các nhóm trung bình, trung vị, mode, độ lệch chuẩn của độ tuổi, tiền lương và chi tiêu hàng tháng của hai nhóm control và treatment
+
 | Variable | Statistic | Control | Treatment |
 
 |----------|-----------|---------|-----------| 
