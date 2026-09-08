@@ -188,14 +188,19 @@ Vì $$0$$ không nằm trong khoảng Confidence level, vậy nên có thể bá
 * Ước tính số lượng khách hàng chuyển đổi tăng thêm.
   Số lượng khách hàng chuyển đổi tăng thêm của nhóm control: 
 * So sánh tổng tiền gửi và tiền gửi trung bình.
-  Tổng tiền gửi của những khách hàng đã mở tài khoản sau chiến dịch của nhóm control: $$33120$$ triệu VNĐ
-  
-  Tổng tiền gửi của những khách hàng đã mở tài khoản sau chiến dịch của nhóm treatment: $$59174$$ triệu VNĐ
 
-  Tiền gửi trung bình của những khách hàng đã mở tài khoản sau chiến dịch của nhóm control: $$9.845$$ triệu VNĐ
+  Tổng tiền gửi của những khách hàng đã mở tài khoản sau chiến dịch của nhóm control : **Total_Deposit_Control** = $$33120$$ triệu VNĐ
   
-  Tiền gửi trung bình của những khách hàng đã mở tài khoản sau chiến dịch của nhóm treatment: $$11.851$$ triệu VNĐ
+  Tổng tiền gửi của những khách hàng đã mở tài khoản sau chiến dịch của nhóm treatment: **Total_Deposit_Treatment** = $$59174$$ triệu VNĐ
+
+  Tiền gửi trung bình của những khách hàng đã mở tài khoản sau chiến dịch của nhóm control: **Average_Deposit_Control** = $$9.845$$ triệu VNĐ
+  
+  Tiền gửi trung bình của những khách hàng đã mở tài khoản sau chiến dịch của nhóm treatment: **Average_Deposit_Treatment** $$11.851$$ triệu VNĐ
+
+  Tổng số người dùng chuyển đổi thêm được tạo ra nhờ treatment so với control: **Additional Converters** = **Absolute Difference** * **$$N_{treatment}$$** $$\approx$$ 1631 người
+  
 * Ước tính incremental deposit từ chiến dịch.
+	**Incremental deposit** = **Additional Converters** * **Average_Deposit_Treatment** = $$19328.693$$ triệu VNĐ
 11. Đưa ra định hướng kinh doanh:
 * Đánh giá liệu chiến dịch có nên được triển khai rộng hơn hay không.
 * Đề xuất hướng tối ưu chiến dịch dựa trên kết quả A/B Testing.
