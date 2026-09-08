@@ -171,7 +171,7 @@ $$u_{1-\frac{\alpha}{2}}$$ = $$u_{0.975}$$ = 1.96
 
 **Confidence Level** = (0.084, 0.102)
 
-Với p-value = $$2.77*10^-93$$ $$\notin$$ (0.084, 0.102)
+Vì 0 không nằm trong khoảng Confidence level, vậy nên có thể bác bỏ giả thuyết $$H_0$$
 
 * 
 * Đánh giá magnitude của treatment effect.
