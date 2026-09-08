@@ -179,7 +179,7 @@ Vì 0 không nằm trong khoảng Confidence level, vậy nên có thể bác b�
 
 **Confidence Level** = (($$\mu_t$$ - $$\mu_c$$)  - $$u_{0.975}$$***Standard Error** ; ($$\mu_t$$ - $$\mu_c$$) + $$u_{0.975}$$***Standard Error**)
 
-**Confidence Level** = (0.084, 0.102)
+**Confidence Level** = (1.730, 2.282)
 
 * Đánh giá magnitude của treatment effect.
 10. Business Impact Analysis
