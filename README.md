@@ -159,7 +159,7 @@ Z-statistic = -14.23 $$\in$$ ($$-\infty$$, $$-1.96$$) $$\cup$$ ($$1.96$$, $$+\in
 Vậy bác bỏ giả thuyết $$H_0$$ rằng trung bình tiền gửi trong tài khoản của nhóm Treatment bằng với nhóm Control.
 
 9. Khoảng tin cậy:
-* Tính 95% Confidence Interval cho sự khác biệt giữa hai nhóm.
+* Tính 95% Confidence Interval cho sự khác biệt mục 7.1.
 
 1 - $$\frac{\alpha}{2}$$ = 1 - $$\frac{0.5}{2}$$ = $$0.975$$
 
@@ -173,7 +173,14 @@ $$u_{1-\frac{\alpha}{2}}$$ = $$u_{0.975}$$ = 1.96
 
 Vì 0 không nằm trong khoảng Confidence level, vậy nên có thể bác bỏ giả thuyết $$H_0$$
 
-* 
+* Tính 95% Confidence Interval cho sự khác biệt mục 7.2.
+
+**Standard Error** = $$\sqrt{\frac{s^2_t}{n_t}+\frac{s^2_c}{n_c}}$$
+
+**Confidence Level** = (($$\mu_t$$ - $$\mu_c$$)  - $$u_{0.975}$$***Standard Error** ; ($$\mu_t$$ - $$\mu_c$$) + $$u_{0.975}$$***Standard Error**)
+
+**Confidence Level** = (0.084, 0.102)
+
 * Đánh giá magnitude của treatment effect.
 10. Business Impact Analysis
 * Ước tính số lượng khách hàng chuyển đổi tăng thêm.
