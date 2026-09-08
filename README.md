@@ -169,9 +169,9 @@ $$u_{1-\frac{\alpha}{2}}$$ = $$u_{0.975}$$ = 1.96
 
 **Confidence Level** = (**Absolute Difference** - $$u_{0.975}$$***Standard Error** ; **Absolute Difference** + $$u_{0.975}$$***Standard Error**)
 
-**Confidence Level** = (0.084, 0.102)
+**Confidence Level** = ($$0.084$$, $$0.102$$)
 
-Vì 0 không nằm trong khoảng Confidence level, vậy nên có thể bác bỏ giả thuyết $$H_0$$
+Vì $$0$$ không nằm trong khoảng Confidence level, vậy nên có thể bác bỏ giả thuyết $$H_0$$
 
 * Tính 95% Confidence Interval cho sự khác biệt mục 7.2.
 
@@ -179,14 +179,22 @@ Vì 0 không nằm trong khoảng Confidence level, vậy nên có thể bác b�
 
 **Confidence Level** = (($$\mu_t$$ - $$\mu_c$$)  - $$u_{0.975}$$***Standard Error** ; ($$\mu_t$$ - $$\mu_c$$) + $$u_{0.975}$$***Standard Error**)
 
-**Confidence Level** = (1.730, 2.282)
+**Confidence Level** = ($$1.730$$, $$2.282$$)
 
-Vì 0 không nằm trong khoảng Confidence level, vậy nên có thể bác bỏ giả thuyết $$H_0$$
+Vì $$0$$ không nằm trong khoảng Confidence level, vậy nên có thể bác bỏ giả thuyết $$H_0$$
 
 * Đánh giá magnitude của treatment effect.
 10. Business Impact Analysis
 * Ước tính số lượng khách hàng chuyển đổi tăng thêm.
+  Số lượng khách hàng chuyển đổi tăng thêm của nhóm control: 
 * So sánh tổng tiền gửi và tiền gửi trung bình.
+  Tổng tiền gửi của những khách hàng đã mở tài khoản sau chiến dịch của nhóm control: $$33120$$ triệu VNĐ
+  
+  Tổng tiền gửi của những khách hàng đã mở tài khoản sau chiến dịch của nhóm treatment: $$59174$$ triệu VNĐ
+
+  Tiền gửi trung bình của những khách hàng đã mở tài khoản sau chiến dịch của nhóm control: $$9.845$$ triệu VNĐ
+  
+  Tiền gửi trung bình của những khách hàng đã mở tài khoản sau chiến dịch của nhóm treatment: $$11.851$$ triệu VNĐ
 * Ước tính incremental deposit từ chiến dịch.
 11. Đưa ra định hướng kinh doanh:
 * Đánh giá liệu chiến dịch có nên được triển khai rộng hơn hay không.
