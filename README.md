@@ -163,7 +163,7 @@ Vậy bác bỏ giả thuyết $$H_0$$ rằng trung bình tiền gửi trong tà
 
 1 - $$\frac{\alpha}{2}$$ = 1 - $$\frac{0.5}{2}$$ = $$0.975$$
 
-$$u_(1-\frac{\alpha}{2})$$ = $$u_{0.975}$$ = 1.96
+$$u_{1-\frac{\alpha}{2}}$$ = $$u_{0.975}$$ = 1.96
 
 **Standard Error** = $$\sqrt{\frac{p_t*(1-p_t)}{n_t}+\frac{p_c*(1-p_c)}{n_c}}$$
 
