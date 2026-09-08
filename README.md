@@ -181,6 +181,8 @@ Vì 0 không nằm trong khoảng Confidence level, vậy nên có thể bác b�
 
 **Confidence Level** = (1.730, 2.282)
 
+Vì 0 không nằm trong khoảng Confidence level, vậy nên có thể bác bỏ giả thuyết $$H_0$$
+
 * Đánh giá magnitude của treatment effect.
 10. Business Impact Analysis
 * Ước tính số lượng khách hàng chuyển đổi tăng thêm.
