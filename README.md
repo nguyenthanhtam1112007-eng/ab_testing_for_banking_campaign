@@ -219,6 +219,7 @@ Vì $$0$$ không nằm trong khoảng Confidence level, vậy nên có thể bá
   
 * Ước tính incremental deposit từ chiến dịch.
 	**Incremental deposit** = **Additional Converters** * **Average_Deposit_Treatment** = $$19328.693$$ triệu VNĐ
+
 11. Đưa ra định hướng kinh doanh:
 * Đánh giá liệu chiến dịch có nên được triển khai rộng hơn hay không.
 * Đề xuất hướng tối ưu chiến dịch dựa trên kết quả A/B Testing.
