@@ -94,7 +94,7 @@ H₁: Số tiền gửi trung bình của Treatment khác Control.
 
 $$ H_1: \mu_T \neq \mu_C $$
 
-$$t = \frac{\mu_T - \mu_C}{\sqrt{\dfrac{s_C^2}{n_C} + \dfrac{s_T^2}{n_T}}}$$
+$$T = \frac{\mu_T - \mu_C}{\sqrt{\dfrac{s_C^2}{n_C} + \dfrac{s_T^2}{n_T}}}$$
 
 Trong đó:
 
