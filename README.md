@@ -139,7 +139,9 @@ Z-statistic = 20.45
 
 Miền bác bỏ của 7.1: ($$u_{1-\alpha}$$; $$+\infty$$) = (1.645; $$+\infty$$)
 
-Z-statistics = 20.45 $$\in$$ (1.645; $$+\infty$$)
+Z-statistics = 20.45 $$\in$$ (1.645; $$+\infty$$) nên bác bỏ giả thuyết $$H_0$$
+
+p-value = $$2.77*10^-93$$ < 0.05 rất nhiều nên cho thấy bằng chứng để bác bỏ $$H_0$$ rất mạnh
 
 Vậy có thể bác bỏ giả định $$H_0$$ và chấp nhận giả thuyết $$H_1$$.
 
