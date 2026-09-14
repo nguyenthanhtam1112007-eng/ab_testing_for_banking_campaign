@@ -49,7 +49,7 @@ Balance Check: Các đặc điểm ban đầu giữa hai nhóm Control và Treat
 | Variable | Opened savings | Total | Conversion rate |
 |----------|-----------|---------|-----------|
 | Control | 3364 | 17505 | 0.192 |
-| Treatment | 4493 | 17495 | 0.286 |
+| Treatment | 4493 | 17495 | 0.285 |
 | Total | 7857 | 35000 | 0.224 |
 
 * Tính Absolute Difference và Relative Lift.
@@ -70,11 +70,19 @@ H₁ (Alternative Hypothesis): Tỷ lệ mở tài khoản của nhóm Treatment
 
 $$ H_1: p_T > p_C $$
 
+$$Z = \frac{p_T - p_C}{\sqrt{p(1-p)\left(\dfrac{1}{n_T} + \dfrac{1}{n_C}\right)}}$$
+
 Trong đó:
 
 $$\(p_T\)$$: Conversion Rate của Treatment
 
 $$\(p_C\)$$: Conversion Rate của Control
+
+$$(p)$$: Conversion Rate của Pool
+
+$$(n_T)$$: Sample Size của Treatment
+
+$$(n_C)$$: Sample Size của Control
 
   7.2 Deposit amount: Liệu thông báo có làm tăng số tiền khách hàng gửi vào tài khoản hay không?
 
@@ -86,11 +94,21 @@ H₁: Số tiền gửi trung bình của Treatment khác Control.
 
 $$ H_1: \mu_T \neq \mu_C $$
 
+$$t = \frac{\mu_T - \mu_C}{\sqrt{\dfrac{s_C^2}{n_C} + \dfrac{s_T^2}{n_T}}}$$
+
 Trong đó:
 
 $$\(\mu_T\)$$: Average Deposit Amount của Treatment
 
 $$\(\mu_C\)$$: Average Deposit Amount của Control
+
+$$s_T^2$$: Phương sai của Average Deposit Amount của Treatment
+
+$$s_C^2$$: Phương sai của Average Deposit Amount của Control
+
+$$(n_T)$$: Sample Size của Treatment
+
+$$(n_C)$$: Sample Size của Control
 
 8. A/B testing trên từng giả thuyết:
 
@@ -112,7 +130,7 @@ Vì vậy, sử dụng Two-Proportion Z-Test để so sánh Conversion Rate gi�
 Nếu p-value < 0.05 → Bác bỏ $$\(H_0\)$$
 
 Nếu p-value ≥ 0.05 → Không đủ cơ sở bác bỏ $$H_0$$
-	​
+
 Sau khi chạy mô hình, ta thu được các kết quả:
 
 p-value = $$2.77*10^-93$$
