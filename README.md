@@ -172,7 +172,7 @@ p-value = $$1.96*10^{-45}$$
 
 T-statistic = 14.23
 
-Miền bác bỏ giả thuyết là ($$-\infty$$, $$-u_{1-\frac{\alpha}{2}}$$) $$\cup$$ ($$u_{1-\frac{\alpha}{2}}$$, $$+\infty$$) = ($$-\infty$$, $$1.96$$) $$\cup$$ ($$1.96$$, $$+\infty$$)
+Miền bác bỏ giả thuyết là ($$-\infty$$, $$t_{1-\frac{\alpha}{2},df}$$) $$\cup$$ ($$t_{1-\frac{\alpha}{2},df}$$, $$+\infty$$) = ($$-\infty$$, $$1.96$$) $$\cup$$ ($$1.96$$, $$+\infty$$)
 
 T-statistic = 14.23 $$\in$$ ($$-\infty$$, $$-1.96$$) $$\cup$$ ($$1.96$$, $$+\infty$$) nên bác bỏ $$H_0$$
 
@@ -193,15 +193,19 @@ $$u_{1-\frac{\alpha}{2}}$$ = $$u_{0.975}$$ = 1.96
 
 **Confidence Level** = ($$0.084$$, $$0.102$$)
 
+Với độ tin cậy 95%, Treatment làm tăng conversion rate khoảng 8.4–10.2 percentage points so với Control.
+
 Vì $$0$$ không nằm trong khoảng Confidence level, vậy nên có thể bác bỏ giả thuyết $$H_0$$
 
 * Tính 95% Confidence Interval cho sự khác biệt mục 7.2.
 
 **Standard Error** = $$\sqrt{\frac{s^2_t}{n_t}+\frac{s^2_c}{n_c}}$$
 
-**Confidence Level** = (($$\mu_t$$ - $$\mu_c$$)  - $$u_{0.975}$$***Standard Error** ; ($$\mu_t$$ - $$\mu_c$$) + $$u_{0.975}$$***Standard Error**)
+**Confidence Level** = (($$\bar{X_T}$$ - $$\bar{X_C}$$)  - $$t_{0.975}$$ ***Standard Error** ; ($$\bar{X_T}$$ - $$\bar{X_C}$$) + $$t_{0.975}$$***Standard Error**)
 
 **Confidence Level** = ($$1.730$$, $$2.282$$)
+
+Với độ tin cậy 95%, mức chênh lệch trung bình tiền gửi giữa Treatment và Control nằm trong khoảng từ 1.730 đến 2.282 triệu VNĐ.
 
 Vì $$0$$ không nằm trong khoảng Confidence level, vậy nên có thể bác bỏ giả thuyết $$H_0$$
 
