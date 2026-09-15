@@ -55,7 +55,7 @@ Balance Check: Các đặc điểm ban đầu giữa hai nhóm Control và Treat
 | Variable | Opened savings | Total | Conversion rate |
 |----------|-----------|---------|-----------|
 | Control | 3364 | 17505 | 0.192 |
-| Treatment | 4493 | 17495 | 0.285 |
+| Treatment | 4993 | 17495 | 0.285 |
 | Total | 7857 | 35000 | 0.224 |
 
 * Tính Absolute Difference và Relative Lift.
@@ -216,6 +216,14 @@ Với độ tin cậy 95%, mức chênh lệch trung bình tiền gửi giữa T
 Vì $$0$$ không nằm trong khoảng Confidence level, vậy nên có thể bác bỏ giả thuyết $$H_0$$
 
 * Đánh giá magnitude của treatment effect.
+
+10. Type I/ Type II Error
+* Với giả thuyết mục 7.1
+
+### Type I Error – α = 5%
+Type I Error xảy ra khi bác bỏ giả thuyết không \(H_0\) mặc dù \(H_0\) thực tế đúng. Trong project này, Type I Error xảy ra khi kết luận rằng notification làm tăng conversion rate, trong khi trên thực tế notification không làm tăng conversion rate. Với mức ý nghĩa \(\alpha=0.05\), quy trình kiểm định được thiết kế sao cho xác suất xảy ra Type I Error **không vượt quá 5%**, với điều kiện giả thuyết không \(H_0\) thực sự đúng.
+
+
 10. Business Impact Analysis
 * Ước tính số lượng khách hàng chuyển đổi tăng thêm.
   Số lượng khách hàng chuyển đổi tăng thêm của nhóm control: 
