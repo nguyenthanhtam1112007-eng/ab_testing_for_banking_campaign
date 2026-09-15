@@ -40,6 +40,12 @@ pip install math matplotlib numpy pandas statsmodels scipy
   
 * Kiểm tra sự cân bằng về các đặc điểm ban đầu giữa Control và Treatment.
 
+Standardized Mean Difference — SMD
+
+$$ SMD= \frac{\bar X_T-\bar X_C} {s_{pooled}} $$
+
+$${s_{pooled}}$$ = $$\sqrt\frac{(n_T - 1)s_T^2 + (n_C - 1)s_C^2}{n_T + n_C -2}$$
+
 Balance Check: Các đặc điểm ban đầu giữa hai nhóm Control và Treatment có sự tương đồng cao. Mean, Median và Standard Deviation của Age, Income và Monthly Spending giữa hai nhóm chỉ có sự chênh lệch nhỏ. Do đó, hai nhóm được xem là tương đối cân bằng về các đặc điểm cơ bản và có thể tiếp tục thực hiện A/B testing để đánh giá hiệu quả của chiến dịch.
 
 * Đảm bảo sự khác biệt về conversion không đơn thuần đến từ sự khác biệt ban đầu giữa hai nhóm.
