@@ -96,7 +96,7 @@ $H_0$: $\bar{X}_T$ = $\bar{X}_C$
 
 H₁: Số tiền gửi trung bình của Treatment khác Control.
 
-$H_1$: $\bar{X}_T$ $\neq$ $bar{X}_C$
+$H_1$: $\bar{X}_T$ $\neq$ $\bar{X}_C$
 
 $$T = \frac{\bar{X}_T - \bar{X}_C}{\sqrt{\dfrac{s_C^2}{n_C} + \dfrac{s_T^2}{n_T}}}$$
 
