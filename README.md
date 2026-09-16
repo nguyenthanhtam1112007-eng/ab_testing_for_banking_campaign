@@ -18,26 +18,26 @@ pip install math matplotlib numpy pandas statsmodels scipy
 
 | Variable | Statistic | Control | Treatment |
 |----------|-----------|---------|-----------|
-| Age | Mean | 38.31 | 38.23 |
-| | Median | 38 | 38 |
-| | Std. Dev. | 11.55 | 11.55 |
-| Income | Mean | 16.58 | 16.64 |
-| | Median | 16.50 | 16.60 |
-| | Std. Dev. | 6.00 | 6.10 |
-| Monthly Spending | Mean | 9.21 | 9.27 |
-| | Median | 9.10 | 9.15 |
-| | Std. Dev. | 4.96 | 5.02 |
+| Age | Mean | $38.31$ | $38.23$ |
+| | Median | $38$ | $38$ |
+| | Std. Dev. | $11.55$ | $11.55$ |
+| Income | Mean | $16.58$ | $16.64$ |
+| | Median | $16.50$ | $16.60$ |
+| | Std. Dev. | $6.00$ | $6.10$ |
+| Monthly Spending | Mean | $9.21$ | $9.27$ |
+| | Median | $9.10$ | $9.15$ |
+| | Std. Dev. | $4.96$ | $5.02$ |
 
 4. EDA: Trực quan hóa và so sánh phân phối của các biến giữa Control và Treatment.
 5. Kiểm tra sự cân đối giữa Control và Treatment
 
 * Kiểm tra quy mô hai nhóm.
 
-  Số lượng mẫu ở Control là 17505
+  Số lượng mẫu ở Control là $17505$
 
-  Số lượng mẫu ở Treatment là 17495
+  Số lượng mẫu ở Treatment là $17495$
 
-  Tổng cộng 35.000 mẫu, tỷ lệ là khoảng 50,01% / 49,99% — hai nhóm gần như bằng nhau tuyệt đối. Đây là dấu hiệu tốt cho việc phân bổ ngẫu nhiên (random assignment) đã hoạt động đúng.
+  Tổng cộng 35.000 mẫu, tỷ lệ là khoảng $50.01\%$ / $49.99\%$ — hai nhóm gần như bằng nhau tuyệt đối. Đây là dấu hiệu tốt cho việc phân bổ ngẫu nhiên (random assignment) đã hoạt động đúng.
   
 * Kiểm tra sự cân bằng về các đặc điểm ban đầu giữa Control và Treatment.
 
@@ -49,15 +49,15 @@ Balance Check: Các đặc điểm ban đầu giữa hai nhóm Control và Treat
 
 | Variable | Opened savings | Total | Conversion rate |
 |----------|-----------|---------|-----------|
-| Control | 3364 | 17505 | 0.192 |
-| Treatment | 4993 | 17495 | 0.285 |
-| Total | 7857 | 35000 | 0.224 |
+| Control | $3364$ | $17505$ | $0.192$ |
+| Treatment | $4993$ | $17495$ | $0.285$ |
+| Total | $7857$ | $35000$ | $0.224$ |
 
 * Tính Absolute Difference và Relative Lift.
 
-**Absolute Difference** = Conversion rate Treatment - Conversion rate Control = 0.093
+**Absolute Difference** = Conversion rate Treatment - Conversion rate Control = $0.093$
 
-**Relative Lift** = $$\frac{Absolute difference}{Conversion rate Control}$$ = 0.485
+**Relative Lift** = $$\frac{Absolute difference}{Conversion rate Control}$$ = $0.485$
 
 7. Lập giả thuyết:
   
@@ -85,7 +85,7 @@ $$(n_T)$$: Sample size của Treatment
 
 $$(n_C)$$: Sample size của Control
 
-  7.2 Deposit amount: Liệu notification có tạo ra sự khác biệt về số tiền gửi ban đầu trung bình của những khách hàng mở Savings hay không?
+  7.2 Deposit amount: Liệu notification có tạo ra sự khác biệt về số tiền gửi ban đầu trung bình của những khách hàng mở savings hay không?
 
 H₀: Số tiền gửi trung bình của Treatment bằng Control.
 
@@ -126,25 +126,25 @@ Do đó, conversion rate của mỗi nhóm có bản chất là một tỷ lệ 
 
 Vì vậy, sử dụng two-Proportion z-test để so sánh conversion rate giữa hai nhóm độc lập.
 
-**Significance level** : $$\alpha$$ = 0.05
+**Significance level** : $$\alpha$$ = $0.05$
 
-Nếu p-value < 0.05 → Bác bỏ $$\(H_0\)$$
+Nếu p-value < $0.05$ → Bác bỏ $$\(H_0\)$$
 
-Nếu p-value ≥ 0.05 → Không đủ cơ sở bác bỏ $$H_0$$
+Nếu p-value ≥ $0.05$ → Không đủ cơ sở bác bỏ $$H_0$$
 
 Sau khi chạy mô hình, ta thu được các kết quả:
 
-p-value = $$2.77\times10^-93$$
+p-value = $2.77\times10^-93$
 
-Z-statistic = 20.45
+Z-statistic = $20.45$
 
 Miền bác bỏ của 7.1: ($$u_{1-\alpha}$$; $$+\infty$$) = (1.645; $$+\infty$$)
 
-Z-statistics = 20.45 $$\in$$ (1.645; $$+\infty$$) nên bác bỏ giả thuyết $$H_0$$
+Z-statistics = $20.45$ $$\in$$ ($1.645$; $$+\infty$$) nên bác bỏ giả thuyết $$H_0$$
 
-p-value = $$2.77\times10^-93$$ < 0.05 rất nhiều nên cho thấy bằng chứng để bác bỏ $$H_0$$ rất mạnh
+p-value = $$2.77\times10^-93$$ < $0.05$ rất nhiều nên cho thấy bằng chứng để bác bỏ $H_0$ rất mạnh
 
-Vậy có thể bác bỏ giả định $$H_0$$ và có đủ bằng chứng để ủng hộ giả thuyết $$H_1$$.
+Vậy có thể bác bỏ giả định $H_0$ và có đủ bằng chứng để ủng hộ giả thuyết $H_1$.
 
 8.2 Kiểm định giả thuyết deposit amount (mục 7.2): Sử dụng Welch's Two-Sample T-Test
 
@@ -158,28 +158,28 @@ Trong project này, sử dụng Welch's two-sample t-test, vì phương pháp n�
 
 |  | Phương sai | Trung bình | Số lượng mẫu |
 |----------|-----------|-----------|-----------|
-| Treatment | 51.71 | 11.85 | 4993 |
-| Control | 31.97 | 9.85 | 3364 |
+| Treatment | $51.71$ | $11.85$ | $4993$ |
+| Control | $31.97$ | $9.85$ | $3364$ |
 
-**Significance level** : $$\alpha$$ = 0.05
+**Significance level** : $$\alpha$$ = $0.05$
 
-Nếu p-value < 0.05 → Bác bỏ $$\(H_0\)$$
+Nếu p-value < $0.05$ → Bác bỏ $$\(H_0\)$$
 
-Nếu p-value ≥ 0.05 → Không đủ cơ sở bác bỏ $$H_0$$
+Nếu p-value ≥ $0.05$ → Không đủ cơ sở bác bỏ $$H_0$$
 
 Sau khi chạy mô hình, ta thu được các kết quả:
 
 p-value = $$1.96\times10^{-45}$$
 
-T-statistic = 14.23
+T-statistic = $14.23$
 
 Miền bác bỏ giả thuyết là ($$-\infty$$, $$t_{1-\frac{\alpha}{2},df}$$) $$\cup$$ ($$t_{1-\frac{\alpha}{2},df}$$, $$+\infty$$) = ($$-\infty$$, $$1.96$$) $$\cup$$ ($$1.96$$, $$+\infty$$)
 
-T-statistic = 14.23 $$\in$$ ($$-\infty$$, $$-1.96$$) $$\cup$$ ($$1.96$$, $$+\infty$$) nên bác bỏ $$H_0$$
+T-statistic = $14.23$ $$\in$$ ($$-\infty$$, $$-1.96$$) $$\cup$$ ($$1.96$$, $$+\infty$$) nên bác bỏ $H_0$
 
-p-value = $$1.96\times10^{-45}$$ < 0.05 rất nhiều nên cho thấy bằng chứng bác bỏ $$H_0$$ rất mạnh.
+p-value = $$1.96\times10^{-45}$$ < 0.05 rất nhiều nên cho thấy bằng chứng bác bỏ $H_0$ rất mạnh.
 
-Vậy bác bỏ giả thuyết $$H_0$$ rằng trung bình tiền gửi trong tài khoản của nhóm Treatment bằng với nhóm Control.
+Vậy bác bỏ giả thuyết $H_0$ rằng trung bình tiền gửi trong tài khoản của nhóm Treatment bằng với nhóm Control.
 
 9. Statistical Power Analysis
 
@@ -193,27 +193,27 @@ Vậy bác bỏ giả thuyết $$H_0$$ rằng trung bình tiền gửi trong tà
    
 9.2. MDE
 
-Với $\alpha$ = 0.05 và target power = 0.8, tính được MDE $\approx$ 0.010
+Với $\alpha$ = $0.05$ và target power = $0.8$, tính được MDE $\approx$ $0.010$
 	
 9.3. Achieved Statistical Power
-	Với $\alpha$ = 0.05, nếu treatment thực sự tạo ra effect bằng mức effect quan sát được, experiment với sample size hiện tại có xác suất phát hiện ra effect đó là bao nhiêu?
-	Achieved power $\approx$ 0.999
+	Với $\alpha$ = $0.05$, nếu treatment thực sự tạo ra effect bằng mức effect quan sát được, experiment với sample size hiện tại có xác suất phát hiện ra effect đó là bao nhiêu?
+	Achieved power $\approx$ $0.999$
 9.4. Practical Significance
 
-**Absolute Differebce** = 0.093
+**Absolute Differebce** = $0.093$
 
-**Relative Lift** = 48.5%
+**Relative Lift** = $48.5%$
 
-**MDE** = 0.010
+**MDE** = $0.010$
 
-Ta thấy absolute difference lớn hơn rất nhiều so với MDE, 0.093 > 0.010. Điều này có nghĩa experiment có khả năng phát hiện một effect nhỏ khoảng 1 percentage point, trong khi effect quan sát được là 9.3 percentage points. Hay nói cách khác, experiment đủ nhạy để phát hiện được những thay đổi khá nhỏ trong conversion rate. conversion rate của treatment cao hơn control nhiều hơn mức effect mà experiment được thiết kế để có khả năng phát hiện
+Ta thấy absolute difference lớn hơn rất nhiều so với MDE, $0.093$ > $0.010$. Điều này có nghĩa experiment có khả năng phát hiện một effect nhỏ khoảng 1 percentage point, trong khi effect quan sát được là $9.3$ percentage points. Hay nói cách khác, experiment đủ nhạy để phát hiện được những thay đổi khá nhỏ trong conversion rate. conversion rate của treatment cao hơn control nhiều hơn mức effect mà experiment được thiết kế để có khả năng phát hiện
 
 10. Confidence Interval:
 * Tính 95% confidence interval cho sự khác biệt mục 7.1.
 
-1 - $$\frac{\alpha}{2}$$ = 1 - $$\frac{0.5}{2}$$ = $$0.975$$
+$1$ - $$\frac{\alpha}{2}$$ = $1$ - $$\frac{0.5}{2}$$ = $0.975$
 
-$$u_{1-\frac{\alpha}{2}}$$ = $$u_{0.975}$$ = 1.96
+$$u_{1-\frac{\alpha}{2}}$$ = $$u_{0.975}$$ = $1.96$
 
 **Standard Error** = $$\sqrt{\frac{p_t\times(1-p_t)}{n_t}+\frac{p_c\times(1-p_c)}{n_c}}$$
 
@@ -221,7 +221,7 @@ $$u_{1-\frac{\alpha}{2}}$$ = $$u_{0.975}$$ = 1.96
 
 **Confidence interval** = ($$0.084$$, $$0.102$$)
 
-Với độ tin cậy 95%, Treatment làm tăng conversion rate khoảng 8.4–10.2 percentage points so với Control.
+Với độ tin cậy $95%$, Treatment làm tăng conversion rate khoảng $8.4–10.2$ percentage points so với Control.
 
 Vì $$0$$ không nằm trong khoảng Confidence interval, vậy nên có thể bác bỏ giả thuyết $$H_0$$
 
@@ -231,9 +231,9 @@ Vì $$0$$ không nằm trong khoảng Confidence interval, vậy nên có thể 
 
 **Confidence interval** = (($$\bar{X_T}$$ - $$\bar{X_C}$$)  - $$t_{0.975}$$ ***Standard error** ; ($$\bar{X_T}$$ - $$\bar{X_C}$$) + $$t_{0.975}$$***Standard error**)
 
-**Confidence interval** = ($$1.730$$, $$2.282$$)
+**Confidence interval** = ($1.730$, $2.282$)
 
-Với độ tin cậy 95%, mức chênh lệch trung bình tiền gửi giữa Treatment và Control nằm trong khoảng từ 1.730 đến 2.282 triệu VNĐ.
+Với độ tin cậy 95%, mức chênh lệch trung bình tiền gửi giữa Treatment và Control nằm trong khoảng từ $1.730$ đến $2.282$ triệu VNĐ.
 
 Vì $$0$$ không nằm trong khoảng confidence interval, vậy nên có thể bác bỏ giả thuyết $$H_0$$
 
@@ -244,19 +244,19 @@ Vì $$0$$ không nằm trong khoảng confidence interval, vậy nên có thể 
   Số lượng khách hàng chuyển đổi tăng thêm của nhóm control: 
 * So sánh tổng tiền gửi và tiền gửi trung bình.
 
-  Tổng tiền gửi của những khách hàng đã mở tài khoản sau chiến dịch của nhóm Control : **Total deposit Control** = $$33120$$ triệu VNĐ
+  Tổng tiền gửi của những khách hàng đã mở tài khoản sau chiến dịch của nhóm Control : **Total deposit Control** = $33120$ triệu VNĐ
   
-  Tổng tiền gửi của những khách hàng đã mở tài khoản sau chiến dịch của nhóm Treatment: **Total deposit Treatment** = $$59174$$ triệu VNĐ
+  Tổng tiền gửi của những khách hàng đã mở tài khoản sau chiến dịch của nhóm Treatment: **Total deposit Treatment** = $59174$ triệu VNĐ
 
-  Tiền gửi trung bình của những khách hàng đã mở tài khoản sau chiến dịch của nhóm Control: **Average deposit Control** = $$9.845$$ triệu VNĐ
+  Tiền gửi trung bình của những khách hàng đã mở tài khoản sau chiến dịch của nhóm Control: **Average deposit Control** = $9.845$ triệu VNĐ
   
-  Tiền gửi trung bình của những khách hàng đã mở tài khoản sau chiến dịch của nhóm Treatment: **Average deposit Treatment** $$11.851$$ triệu VNĐ
+  Tiền gửi trung bình của những khách hàng đã mở tài khoản sau chiến dịch của nhóm Treatment: **Average deposit Treatment** $11.851$ triệu VNĐ
 
   Tổng số người dùng chuyển đổi thêm được tạo ra nhờ Treatment so với Control: **Additional converters** = **Absolute difference** * **$$N_{treatment}$$** $$\approx$$ 1631 người
   
 * Ước tính incremental deposit từ chiến dịch.
 
-	**Incremental deposit** = **Additional converters** * **Average deposit Treatment** = $$19328.693$$ triệu VNĐ
+	**Incremental deposit** = **Additional converters** * **Average deposit Treatment** = $19328.693$ triệu VNĐ
   
   Với incremental deposit, đây là con số thể hiện business impact sau khi đã hoàn thành chiến dịch notification chứ không mang tính quan hệ nhân quả.
   
