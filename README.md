@@ -7,13 +7,14 @@ pip install matplotlib numpy pandas statsmodels scipy
 ```
 ## Cấu trúc file
 * banking_ab_testing.py: xử lí phân tích dữ liệu
+* savings_notification_campaign_data.xlsx: synthetic dataset chứa dữ liệu Control và Treatment.
 * sql_filtering.sql: lọc dữ liệu từ file excel thành hai nhóm Control và Treatment
 
 # Quy trình phân tích
 1. Thu thập và chuẩn bị dữ liệu: Tạo một bộ dữ liệu synthetic để dễ dàng tính toán hơn.
 2. Lọc dữ liệu:
 * Phân chia người dùng thành 2 nhóm gồm Control và Treatment bằng SQL.
-* Trong file Excel savings_notification_campaign đã chứa 2 subsheet của Control và Treatment
+* Trong file Excel savings_notification_campaign_data.xlsx đã chứa 2 subsheet của Control và Treatment
 3. Thống kê mô tả: So sánh đặc điểm cơ bản của các nhóm trung bình, trung vị, mode, độ lệch chuẩn của độ tuổi, tiền lương và chi tiêu hàng tháng của hai nhóm Control và Treatment
 
 | Variable | Statistic | Control | Treatment |
@@ -37,7 +38,7 @@ pip install matplotlib numpy pandas statsmodels scipy
 
   Số lượng mẫu ở Treatment là $17495$
 
-  Tổng cộng 35.000 mẫu, tỷ lệ là khoảng $50.01\%$ / $49.99\%$ — hai nhóm gần như bằng nhau tuyệt đối. Đây là dấu hiệu tốt cho việc phân bổ ngẫu nhiên (random assignment) đã hoạt động đúng.
+  Tổng cộng 35.000 mẫu, tỷ lệ là khoảng $50.01\%$/ $49.99\%$ — hai nhóm gần như bằng nhau tuyệt đối. Đây là dấu hiệu tốt cho việc phân bổ ngẫu nhiên (random assignment) đã hoạt động đúng.
   
 * Kiểm tra sự cân bằng về các đặc điểm ban đầu giữa Control và Treatment.
 
@@ -101,13 +102,13 @@ $$T = \frac{\bar{X}_T - \bar{X}_C}{\sqrt{\dfrac{s_C^2}{n_C} + \dfrac{s_T^2}{n_T}
 
 Trong đó:
 
-$\bar{X}_T$: Average deposit amount của Treatment
+$\bar{X}_T$: Số tiền gửi trung bình của Treatment
 
-$\bar{X}_C$: Average deposit amount của Control
+$\bar{X}_C$: Số tiền gửi trung bình của Control
 
-$$s_T^2$$: Phương sai của average deposit amount của Treatment
+$$s_T^2$$: Phương sai của số tiền gửi trung bình của Treatment
 
-$$s_C^2$$: Phương sai của average deposit amount của Control
+$$s_C^2$$: Phương sai của số tiền gửi trung bình của Control
 
 $$(n_T)$$: Sample size của Treatment
 
@@ -124,9 +125,9 @@ Conversion rate được tính dựa trên biến opened_savings, chỉ nhận h
 1: Khách hàng mở savings
 0: Khách hàng không mở savings
 
-Do đó, conversion rate của mỗi nhóm có bản chất là một tỷ lệ (proportion). Mục tiêu là kiểm tra xem tỷ lệ mở Savings của Treatment có cao hơn Control hay không.
+Do đó, conversion rate của mỗi nhóm có bản chất là một tỷ lệ (proportion). Mục tiêu là kiểm tra xem tỷ lệ mở savings của Treatment có cao hơn Control hay không.
 
-Vì vậy, sử dụng two-Proportion z-test để so sánh conversion rate giữa hai nhóm độc lập.
+Vì vậy, sử dụng two-proportion z-test để so sánh conversion rate giữa hai nhóm độc lập.
 
 **Significance level** : $$\alpha$$ = $0.05$
 
@@ -154,7 +155,7 @@ Lựa chọn phương pháp kiểm định
 
 Deposit amount là biến định lượng liên tục, thể hiện số tiền khách hàng gửi vào sản phẩm savings. Mục tiêu là kiểm tra liệu số tiền gửi trung bình giữa nhóm Treatment và Control có khác nhau hay không.
 
-Do đó, sử dụng Independent Two-Sample T-Test để so sánh giá trị trung bình của hai nhóm độc lập.
+Do đó, sử dụng Welch's two-sample t-test để so sánh giá trị trung bình của hai nhóm độc lập.
 
 Trong project này, sử dụng Welch's two-sample t-test, vì phương pháp này không yêu cầu giả định phương sai của hai nhóm bằng nhau và phù hợp khi phương sai giữa hai nhóm có thể khác nhau.
 
@@ -209,7 +210,29 @@ Với $\alpha$ = $0.05$, nếu treatment thực sự tạo ra effect bằng mứ
 	
 Achieved power $\approx$ $0.999$
 
-9.4. Practical Significance
+9.4. Type I/ Type II Error
+
+* Type I Error (**$\alpha$**)
+
+Type I Error xảy ra khi bác bỏ (H_0) trong khi (H_0) thực tế đúng. Trong context của project, điều này có nghĩa là kết luận rằng notification làm tăng conversion rate trong khi trên thực tế notification không tạo ra sự gia tăng conversion rate.
+
+Với mức ý nghĩa: $\alpha = 0.05$, xác suất mắc Type I Error được kiểm soát ở mức 5% khi (H_0) thực sự đúng.
+
+* Type II Error (**$\beta$**)
+
+Type II Error xảy ra khi không bác bỏ (H_0) trong khi (H_1) thực tế đúng. Trong context của project, điều này có nghĩa là notification thực sự làm tăng conversion rate nhưng thí nghiệm không phát hiện được sự gia tăng này. Statistical Power được định nghĩa là: $Power = 1-\beta$
+
+Do đó: $\beta = 1-Power$
+
+Với target statistical power là 80%: $\beta = 1-0.8 = 0.2 = 20%$
+
+Target Power = 80% → target Type II Error $\beta = 20%$.
+
+Achieved Power $\approx$ 99.9% → achieved Type II Error ($\beta \approx 0.1%$ tại effect size được quan sát.
+
+Điều này cho thấy với sample size hiện tại, thí nghiệm có statistical power rất cao để phát hiện effect size ở mức quan sát được.
+
+9.5. Practical Significance
 
 **Absolute Differebce** = $0.093$
 
