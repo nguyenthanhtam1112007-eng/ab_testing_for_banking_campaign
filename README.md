@@ -193,9 +193,15 @@ Vậy bác bỏ giả thuyết $H_0$ rằng trung bình tiền gửi trong tài 
    
    Total: $35000$
    
-9.2. MDE
+9.2. Minimum Detectable Effect (MDE)
 
-Với $\alpha$ = $0.05$ và target power = $0.8$, tính được MDE $\approx$ $0.010$
+MDE là mức chênh lệch nhỏ nhất giữa Treatment và Control mà thí nghiệm có khả năng phát hiện được với một mức power và significance đã chọn.
+
+Trong thí nghiệm mục 7.1, đây là một two-proportion test sample size khác nhau $n_T$ $\neq$ $n_C$ nên 
+	
+$$MDE \approx (z_{1-\alpha} + z_{1-\beta})\sqrt{p_C(1-p_C)\left(\frac{1}{n_C}+\frac{1}{n_T}\right)}$$
+
+Với $\alpha$ = $0.05$ và target power = $0.8$ thì $z_{1-\alpha}$ = 1.645 và $z_{1-\beta}$ = 0.842, tính được MDE $\approx$ $0.010$
 	
 9.3. Achieved Statistical Power
 	Với $\alpha$ = $0.05$, nếu treatment thực sự tạo ra effect bằng mức effect quan sát được, experiment với sample size hiện tại có xác suất phát hiện ra effect đó là bao nhiêu?
@@ -219,7 +225,7 @@ $$u_{1-\frac{\alpha}{2}}$$ = $$u_{0.975}$$ = $1.96$
 
 **Standard Error** = $$\sqrt{\frac{p_t\times(1-p_t)}{n_t}+\frac{p_c\times(1-p_c)}{n_c}}$$
 
-**Confidence interval** = (**Absolute difference** - $$u_{0.975}$$\times**Standard error** ; **Absolute difference** + $$u_{0.975}$$\times**Standard error**)
+**Confidence interval** = (**Absolute difference** - $u_{0.975}$ $\times$ **Standard error** ; **Absolute difference** + $u_{0.975}$ $\times$ **Standard error**)
 
 **Confidence interval** = ($$0.084$$, $$0.102$$)
 
@@ -231,7 +237,7 @@ Vì $$0$$ không nằm trong khoảng Confidence interval, vậy nên có thể 
 
 **Standard error** = $$\sqrt{\frac{s^2_t}{n_t}+\frac{s^2_c}{n_c}}$$
 
-**Confidence interval** = (($$\bar{X_T}$$ - $$\bar{X_C}$$)  - $t_{0.975}$\times**Standard error** ; ($$\bar{X_T}$$ - $$\bar{X_C}$$) + $$t_{0.975}$$\times**Standard error**)
+**Confidence interval** = (($$\bar{X_T}$$ - $$\bar{X_C}$$)  - $t_{0.975}$ $\times$ **Standard error** ; ($$\bar{X_T}$$ - $$\bar{X_C}$$) + $$t_{0.975}$ $\times$ **Standard error**)
 
 **Confidence interval** = ($1.730$, $2.282$)
 
