@@ -284,7 +284,7 @@ Vì $$0$$ không nằm trong khoảng confidence interval, vậy nên có thể 
   
   Tiền gửi trung bình của những khách hàng đã mở tài khoản sau chiến dịch của nhóm Treatment: **Average deposit Treatment** $11.851$ triệu VNĐ
 
-  Tổng số người dùng chuyển đổi thêm được tạo ra nhờ Treatment so với Control: **Additional converters** = **Absolute difference** * **$$N_{treatment}$$** $$\approx$$ $1631$ người
+  Tổng số người dùng chuyển đổi thêm được tạo ra nhờ Treatment so với Control: **Additional converters** = **Absolute difference** $\times$ **$$N_{treatment}$$** $$\approx$$ $1631$ người
   
 * Ước tính incremental deposit từ chiến dịch.
 
