@@ -240,8 +240,6 @@ Vì $$0$$ không nằm trong khoảng confidence interval, vậy nên có thể 
 * Đánh giá magnitude của treatment effect.
 
 10. Business Impact Analysis
-* Ước tính số lượng khách hàng chuyển đổi tăng thêm.
-  Số lượng khách hàng chuyển đổi tăng thêm của nhóm control: 
 * So sánh tổng tiền gửi và tiền gửi trung bình.
 
   Tổng tiền gửi của những khách hàng đã mở tài khoản sau chiến dịch của nhóm Control : **Total deposit Control** = $33120$ triệu VNĐ
@@ -252,7 +250,7 @@ Vì $$0$$ không nằm trong khoảng confidence interval, vậy nên có thể 
   
   Tiền gửi trung bình của những khách hàng đã mở tài khoản sau chiến dịch của nhóm Treatment: **Average deposit Treatment** $11.851$ triệu VNĐ
 
-  Tổng số người dùng chuyển đổi thêm được tạo ra nhờ Treatment so với Control: **Additional converters** = **Absolute difference** * **$$N_{treatment}$$** $$\approx$$ 1631 người
+  Tổng số người dùng chuyển đổi thêm được tạo ra nhờ Treatment so với Control: **Additional converters** = **Absolute difference** * **$$N_{treatment}$$** $$\approx$$ $1631$ người
   
 * Ước tính incremental deposit từ chiến dịch.
 
