@@ -43,6 +43,8 @@ pip install matplotlib numpy pandas statsmodels scipy
 
 Balance Check: Các đặc điểm ban đầu giữa hai nhóm Control và Treatment có sự tương đồng cao. Mean, median và standard deviation của age, income và monthly spending giữa hai nhóm chỉ có sự chênh lệch nhỏ. Do đó, hai nhóm được xem là tương đối cân bằng về các đặc điểm cơ bản và có thể tiếp tục thực hiện A/B testing để đánh giá hiệu quả của chiến dịch.
 
+Phân bổ ngẫu nhiên được giả định trong thiết kế thử nghiệm tổng hợp. Các bước kiểm tra tính cân bằng được thực hiện để đánh giá xem nhóm Kiểm chứng (Control) và nhóm Thử nghiệm (Treatment) có khả năng so sánh được với nhau dựa trên các đặc điểm nền tảng đã quan sát hay không.
+
 * Đảm bảo sự khác biệt về conversion không đơn thuần đến từ sự khác biệt ban đầu giữa hai nhóm.
 6. Phân tích dữ liệu:
 * Tính conversion rate của Control và Treatment.
