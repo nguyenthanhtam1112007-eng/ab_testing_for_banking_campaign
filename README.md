@@ -217,7 +217,7 @@ $$u_{1-\frac{\alpha}{2}}$$ = $$u_{0.975}$$ = $1.96$
 
 **Standard Error** = $$\sqrt{\frac{p_t\times(1-p_t)}{n_t}+\frac{p_c\times(1-p_c)}{n_c}}$$
 
-**Confidence interval** = (**Absolute difference** - $$u_{0.975}$$***Standard error** ; **Absolute difference** + $$u_{0.975}$$***Standard error**)
+**Confidence interval** = (**Absolute difference** - $$u_{0.975}$$\times**Standard error** ; **Absolute difference** + $$u_{0.975}$$\times**Standard error**)
 
 **Confidence interval** = ($$0.084$$, $$0.102$$)
 
@@ -229,7 +229,7 @@ Vì $$0$$ không nằm trong khoảng Confidence interval, vậy nên có thể 
 
 **Standard error** = $$\sqrt{\frac{s^2_t}{n_t}+\frac{s^2_c}{n_c}}$$
 
-**Confidence interval** = (($$\bar{X_T}$$ - $$\bar{X_C}$$)  - $$t_{0.975}$$ ***Standard error** ; ($$\bar{X_T}$$ - $$\bar{X_C}$$) + $$t_{0.975}$$***Standard error**)
+**Confidence interval** = (($$\bar{X_T}$$ - $$\bar{X_C}$$)  - $t_{0.975}$\times**Standard error** ; ($$\bar{X_T}$$ - $$\bar{X_C}$$) + $$t_{0.975}$$\times**Standard error**)
 
 **Confidence interval** = ($1.730$, $2.282$)
 
