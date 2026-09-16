@@ -89,19 +89,19 @@ $$(n_C)$$: Sample size của Control
 
 H₀: Số tiền gửi trung bình của Treatment bằng Control.
 
-$$ H_0: \bar_T = \bar_C $$
+$H_0$: $\bar{X}_T$ = $\bar{X}_C$
 
 H₁: Số tiền gửi trung bình của Treatment khác Control.
 
-$$ H_1: \bar_T \neq \bar_C $$
+$H_1$: $\bar{X}_T$ $\neq$ $bar{X}_C$
 
-$$T = \frac{\bar_T - \bar_C}{\sqrt{\dfrac{s_C^2}{n_C} + \dfrac{s_T^2}{n_T}}}$$
+$$T = \frac{\bar{X}_T - \bar{X}_C}{\sqrt{\dfrac{s_C^2}{n_C} + \dfrac{s_T^2}{n_T}}}$$
 
 Trong đó:
 
-$$\(\bar_T\)$$: Average deposit amount của Treatment
+$\bar{X}_T$: Average deposit amount của Treatment
 
-$$\(\bar_C\)$$: Average deposit amount của Control
+$\bar{X}_C$: Average deposit amount của Control
 
 $$s_T^2$$: Phương sai của average deposit amount của Treatment
 
@@ -134,7 +134,7 @@ Nếu p-value ≥ 0.05 → Không đủ cơ sở bác bỏ $$H_0$$
 
 Sau khi chạy mô hình, ta thu được các kết quả:
 
-p-value = $$2.77*10^-93$$
+p-value = $$2.77\times10^-93$$
 
 Z-statistic = 20.45
 
@@ -142,7 +142,7 @@ Miền bác bỏ của 7.1: ($$u_{1-\alpha}$$; $$+\infty$$) = (1.645; $$+\infty$
 
 Z-statistics = 20.45 $$\in$$ (1.645; $$+\infty$$) nên bác bỏ giả thuyết $$H_0$$
 
-p-value = $$2.77*10^-93$$ < 0.05 rất nhiều nên cho thấy bằng chứng để bác bỏ $$H_0$$ rất mạnh
+p-value = $$2.77\times10^-93$$ < 0.05 rất nhiều nên cho thấy bằng chứng để bác bỏ $$H_0$$ rất mạnh
 
 Vậy có thể bác bỏ giả định $$H_0$$ và có đủ bằng chứng để ủng hộ giả thuyết $$H_1$$.
 
@@ -169,7 +169,7 @@ Nếu p-value ≥ 0.05 → Không đủ cơ sở bác bỏ $$H_0$$
 
 Sau khi chạy mô hình, ta thu được các kết quả:
 
-p-value = $$1.96*10^{-45}$$
+p-value = $$1.96\times10^{-45}$$
 
 T-statistic = 14.23
 
@@ -177,7 +177,7 @@ Miền bác bỏ giả thuyết là ($$-\infty$$, $$t_{1-\frac{\alpha}{2},df}$$)
 
 T-statistic = 14.23 $$\in$$ ($$-\infty$$, $$-1.96$$) $$\cup$$ ($$1.96$$, $$+\infty$$) nên bác bỏ $$H_0$$
 
-p-value = $$1.96*10^{-45}$$ < 0.05 rất nhiều nên cho thấy bằng chứng bác bỏ $$H_0$$ rất mạnh.
+p-value = $$1.96\times10^{-45}$$ < 0.05 rất nhiều nên cho thấy bằng chứng bác bỏ $$H_0$$ rất mạnh.
 
 Vậy bác bỏ giả thuyết $$H_0$$ rằng trung bình tiền gửi trong tài khoản của nhóm Treatment bằng với nhóm Control.
 
@@ -215,7 +215,7 @@ Ta thấy absolute difference lớn hơn rất nhiều so với MDE, 0.093 > 0.0
 
 $$u_{1-\frac{\alpha}{2}}$$ = $$u_{0.975}$$ = 1.96
 
-**Standard Error** = $$\sqrt{\frac{p_t*(1-p_t)}{n_t}+\frac{p_c*(1-p_c)}{n_c}}$$
+**Standard Error** = $$\sqrt{\frac{p_t\times(1-p_t)}{n_t}+\frac{p_c\times(1-p_c)}{n_c}}$$
 
 **Confidence interval** = (**Absolute difference** - $$u_{0.975}$$***Standard error** ; **Absolute difference** + $$u_{0.975}$$***Standard error**)
 
