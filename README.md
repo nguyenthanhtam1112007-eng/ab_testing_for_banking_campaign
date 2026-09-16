@@ -178,7 +178,7 @@ T-statistic = $14.23$
 
 Miền bác bỏ giả thuyết là ($$-\infty$$, $$t_{1-\frac{\alpha}{2},df}$$) $$\cup$$ ($$t_{1-\frac{\alpha}{2},df}$$, $$+\infty$$) = ($$-\infty$$, $$1.96$$) $$\cup$$ ($$1.96$$, $$+\infty$$)
 
-T-statistic = $14.23$ $$\in$$ ($$-\infty$$, $$-1.96$$) $$\cup$$ ($$1.96$$, $$+\infty$$) nên bác bỏ $H_0$
+T-statistic = $14.23$ $$\in$$ ($$-\infty$$, $-1.96$) $$\cup$$ ($$1.96$$, $$+\infty$$) nên bác bỏ $H_0$
 
 p-value = $$1.96\times10^{-45}$$ < $0.05$ rất nhiều nên cho thấy bằng chứng bác bỏ $H_0$ rất mạnh.
 
@@ -263,7 +263,7 @@ Vì $$0$$ không nằm trong khoảng Confidence interval, vậy nên có thể 
 
 **Standard error** = $$\sqrt{\frac{s^2_t}{n_t}+\frac{s^2_c}{n_c}}$$
 
-**Confidence interval** = (($$\bar{X_T}$$ - $$\bar{X_C}$$)  - $t_{0.975}$ $\times$ **Standard error** ; ($$\bar{X_T}$$ - $$\bar{X_C}$$) + $$t_{0.975}$ $\times$ **Standard error**)
+**Confidence interval** = (($$\bar{X_T}$$ - $$\bar{X_C}$$)  - $t_{0.975}$ $\times$ **Standard error** ; ($$\bar{X_T}$$ - $$\bar{X_C}$$) + $t_{0.975}$ $\times$ **Standard error**)
 
 **Confidence interval** = ($1.730$, $2.282$)
 
