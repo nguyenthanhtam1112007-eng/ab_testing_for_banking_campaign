@@ -204,8 +204,11 @@ $$MDE \approx (z_{1-\alpha} + z_{1-\beta})\sqrt{p_C(1-p_C)\left(\frac{1}{n_C}+\f
 Với $\alpha$ = $0.05$ và target power = $0.8$ thì $z_{1-\alpha}$ = 1.645 và $z_{1-\beta}$ = 0.842, tính được MDE $\approx$ $0.010$
 	
 9.3. Achieved Statistical Power
-	Với $\alpha$ = $0.05$, nếu treatment thực sự tạo ra effect bằng mức effect quan sát được, experiment với sample size hiện tại có xác suất phát hiện ra effect đó là bao nhiêu?
-	Achieved power $\approx$ $0.999$
+	
+Với $\alpha$ = $0.05$, nếu treatment thực sự tạo ra effect bằng mức effect quan sát được, experiment với sample size hiện tại có xác suất phát hiện ra effect đó là bao nhiêu?
+	
+Achieved power $\approx$ $0.999$
+
 9.4. Practical Significance
 
 **Absolute Differebce** = $0.093$
