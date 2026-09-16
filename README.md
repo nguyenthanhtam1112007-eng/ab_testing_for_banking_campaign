@@ -3,7 +3,7 @@
 
 Cài đặt
 ```python
-pip install math matplotlib numpy pandas statsmodels scipy
+pip install matplotlib numpy pandas statsmodels scipy
 ```
 ## Cấu trúc file
 * banking_ab_testing.py: xử lí phân tích dữ liệu
@@ -177,7 +177,7 @@ Miền bác bỏ giả thuyết là ($$-\infty$$, $$t_{1-\frac{\alpha}{2},df}$$)
 
 T-statistic = $14.23$ $$\in$$ ($$-\infty$$, $$-1.96$$) $$\cup$$ ($$1.96$$, $$+\infty$$) nên bác bỏ $H_0$
 
-p-value = $$1.96\times10^{-45}$$ < 0.05 rất nhiều nên cho thấy bằng chứng bác bỏ $H_0$ rất mạnh.
+p-value = $$1.96\times10^{-45}$$ < $0.05$ rất nhiều nên cho thấy bằng chứng bác bỏ $H_0$ rất mạnh.
 
 Vậy bác bỏ giả thuyết $H_0$ rằng trung bình tiền gửi trong tài khoản của nhóm Treatment bằng với nhóm Control.
 
