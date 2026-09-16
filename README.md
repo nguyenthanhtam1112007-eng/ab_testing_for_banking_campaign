@@ -186,7 +186,33 @@ p-value = $$1.96*10^{-45}$$ < 0.05 rất nhiều nên cho thấy bằng chứng 
 
 Vậy bác bỏ giả thuyết $$H_0$$ rằng trung bình tiền gửi trong tài khoản của nhóm Treatment bằng với nhóm Control.
 
-9. Khoảng tin cậy:
+9. Statistical Power Analysis
+
+9.1. Sample Size
+   Control: $15707$
+   
+   Treatment: $17495$
+   
+   Total: $35000$
+   
+9.2. MDE
+
+Với $\alpha$ = 0.05 và Target Power = 0.8, tính được MDE $\approx$ 0.010
+	
+9.3. Achieved Statistical Power
+	Với $\alpha$ = 0.05, nếu treatment thực sự tạo ra effect bằng mức effect quan sát được, experiment với sample size hiện tại có xác suất phát hiện ra effect đó là bao nhiêu?
+	Achieved power $\approx$ 0.999
+9.4. Practical Significance
+
+**Absolute Differebce** = 0.093
+
+**Relative Lift** = 48.5%
+
+**MDE** = 0.010
+
+Ta thấy Absolute Difference lớn hơn rất nhiều so với MDE, 0.093 > 0.010. Điều này có nghĩa experiment có khả năng phát hiện một effect nhỏ khoảng 1 percentage point, trong khi effect quan sát được là 9.3 percentage points. Hay nói cách khác, experiment đủ nhạy để phát hiện được những thay đổi khá nhỏ trong conversion rate. conversion rate của treatment cao hơn control nhiều hơn mức effect mà experiment được thiết kế để có khả năng phát hiện
+
+10. Khoảng tin cậy:
 * Tính 95% Confidence Interval cho sự khác biệt mục 7.1.
 
 1 - $$\frac{\alpha}{2}$$ = 1 - $$\frac{0.5}{2}$$ = $$0.975$$
@@ -222,7 +248,6 @@ Vì $$0$$ không nằm trong khoảng Confidence level, vậy nên có thể bá
 
 ### Type I Error – α = 5%
 Type I Error xảy ra khi bác bỏ giả thuyết không \(H_0\) mặc dù \(H_0\) thực tế đúng. Trong project này, Type I Error xảy ra khi kết luận rằng notification làm tăng conversion rate, trong khi trên thực tế notification không làm tăng conversion rate. Với mức ý nghĩa \(\alpha=0.05\), quy trình kiểm định được thiết kế sao cho xác suất xảy ra Type I Error **không vượt quá 5%**, với điều kiện giả thuyết không \(H_0\) thực sự đúng.
-
 
 10. Business Impact Analysis
 * Ước tính số lượng khách hàng chuyển đổi tăng thêm.
