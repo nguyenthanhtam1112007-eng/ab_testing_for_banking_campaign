@@ -13,7 +13,7 @@ pip install matplotlib numpy pandas statsmodels scipy
 1. Thu thập và chuẩn bị dữ liệu: Tạo một bộ dữ liệu synthetic để dễ dàng tính toán hơn.
 2. Lọc dữ liệu:
 * Phân chia người dùng thành 2 nhóm gồm Control và Treatment bằng SQL.
-* Trong file Excel savings_notificaion_campaign đã chứa 2 subsheet của Control và Treatment
+* Trong file Excel savings_notification_campaign đã chứa 2 subsheet của Control và Treatment
 3. Thống kê mô tả: So sánh đặc điểm cơ bản của các nhóm trung bình, trung vị, mode, độ lệch chuẩn của độ tuổi, tiền lương và chi tiêu hàng tháng của hai nhóm Control và Treatment
 
 | Variable | Statistic | Control | Treatment |
@@ -262,3 +262,4 @@ Vì $$0$$ không nằm trong khoảng confidence interval, vậy nên có thể 
 * Đánh giá liệu chiến dịch có nên được triển khai rộng hơn hay không.
 * Đề xuất hướng tối ưu chiến dịch dựa trên kết quả A/B Testing.
 ## Ghi chú
+Project trình bày cách giải quyết bài toán bằng Data/Statistics, chứ chưa chứng minh rằng con số 9.3 pp sẽ xảy ra trong một chiến dịch ngân hàng thật, vì bộ dữ liệu của project là synthetic data
