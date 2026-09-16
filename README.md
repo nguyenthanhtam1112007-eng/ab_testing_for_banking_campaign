@@ -123,6 +123,7 @@ Lựa chọn phương pháp kiểm định
 Conversion rate được tính dựa trên biến opened_savings, chỉ nhận hai giá trị:
 
 1: Khách hàng mở savings
+
 0: Khách hàng không mở savings
 
 Do đó, conversion rate của mỗi nhóm có bản chất là một tỷ lệ (proportion). Mục tiêu là kiểm tra xem tỷ lệ mở savings của Treatment có cao hơn Control hay không.
