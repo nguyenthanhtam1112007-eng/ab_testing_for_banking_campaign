@@ -291,7 +291,9 @@ Vì $$0$$ không nằm trong khoảng confidence interval, vậy nên có thể 
 
 	**Incremental deposit** = **Additional converters** * **Average deposit Treatment** = $19328.693$ triệu VNĐ
   
-  Với incremental deposit, đây là con số thể hiện business impact sau khi đã hoàn thành chiến dịch notification chứ không mang tính quan hệ nhân quả.
+  Incremental deposit được ước lượng dựa trên giả định rằng số người dùng chuyển đổi tăng thêm nhờ Treatment sẽ có mức tiền gửi là mức tiền gửi trung bình được quan sát trong nhóm Treatment.
+
+  Do đó, đây là ước lượng dựa trên giả định, không phải giá trị incremental deposit được quan sát trực tiếp trong thí nghiệm.
   
 11. Đưa ra định hướng kinh doanh:
 * Đánh giá liệu chiến dịch có nên được triển khai rộng hơn hay không.
