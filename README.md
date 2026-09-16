@@ -90,7 +90,7 @@ $$(n_T)$$: Sample Size của Treatment
 
 $$(n_C)$$: Sample Size của Control
 
-  7.2 Deposit amount: Liệu thông báo có làm tăng số tiền khách hàng gửi vào tài khoản hay không?
+  7.2 Deposit amount: Liệu notification có tạo ra sự khác biệt về số tiền gửi ban đầu trung bình của những khách hàng mở Savings hay không?
 
 H₀: Số tiền gửi trung bình của Treatment bằng Control.
 
@@ -243,12 +243,6 @@ Vì $$0$$ không nằm trong khoảng Confidence level, vậy nên có thể bá
 
 * Đánh giá magnitude của treatment effect.
 
-10. Type I/ Type II Error
-* Với giả thuyết mục 7.1
-
-### Type I Error – α = 5%
-Type I Error xảy ra khi bác bỏ giả thuyết không \(H_0\) mặc dù \(H_0\) thực tế đúng. Trong project này, Type I Error xảy ra khi kết luận rằng notification làm tăng conversion rate, trong khi trên thực tế notification không làm tăng conversion rate. Với mức ý nghĩa \(\alpha=0.05\), quy trình kiểm định được thiết kế sao cho xác suất xảy ra Type I Error **không vượt quá 5%**, với điều kiện giả thuyết không \(H_0\) thực sự đúng.
-
 10. Business Impact Analysis
 * Ước tính số lượng khách hàng chuyển đổi tăng thêm.
   Số lượng khách hàng chuyển đổi tăng thêm của nhóm control: 
@@ -265,8 +259,11 @@ Type I Error xảy ra khi bác bỏ giả thuyết không \(H_0\) mặc dù \(H_
   Tổng số người dùng chuyển đổi thêm được tạo ra nhờ treatment so với control: **Additional Converters** = **Absolute Difference** * **$$N_{treatment}$$** $$\approx$$ 1631 người
   
 * Ước tính incremental deposit từ chiến dịch.
-	**Incremental deposit** = **Additional Converters** * **Average_Deposit_Treatment** = $$19328.693$$ triệu VNĐ
 
+	**Incremental deposit** = **Additional Converters** * **Average_Deposit_Treatment** = $$19328.693$$ triệu VNĐ
+  
+  Với Incremental deposit, đây là con số thể hiện business impact sau khi đã hoàn thành chiến dịch Notification chứ không mang tính quan hệ nhân quả.
+  
 11. Đưa ra định hướng kinh doanh:
 * Đánh giá liệu chiến dịch có nên được triển khai rộng hơn hay không.
 * Đề xuất hướng tối ưu chiến dịch dựa trên kết quả A/B Testing.
