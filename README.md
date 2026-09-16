@@ -214,13 +214,13 @@ Achieved power $\approx$ $0.999$
 
 * Type I Error (**$\alpha$**)
 
-Type I Error xảy ra khi bác bỏ (H_0) trong khi (H_0) thực tế đúng. Trong context của project, điều này có nghĩa là kết luận rằng notification làm tăng conversion rate trong khi trên thực tế notification không tạo ra sự gia tăng conversion rate.
+Type I Error xảy ra khi bác bỏ $H_0$ trong khi $H_0$ thực tế đúng. Trong context của project, điều này có nghĩa là kết luận rằng notification làm tăng conversion rate trong khi trên thực tế notification không tạo ra sự gia tăng conversion rate.
 
-Với mức ý nghĩa: $\alpha = 0.05$, xác suất mắc Type I Error được kiểm soát ở mức 5% khi (H_0) thực sự đúng.
+Với mức ý nghĩa: $\alpha = 0.05$, xác suất mắc Type I Error được kiểm soát ở mức 5% khi $H_0$ thực sự đúng.
 
 * Type II Error (**$\beta$**)
 
-Type II Error xảy ra khi không bác bỏ (H_0) trong khi (H_1) thực tế đúng. Trong context của project, điều này có nghĩa là notification thực sự làm tăng conversion rate nhưng thí nghiệm không phát hiện được sự gia tăng này. Statistical Power được định nghĩa là: $Power = 1-\beta$
+Type II Error xảy ra khi không bác bỏ $H_0$ trong khi $H_1$ thực tế đúng. Trong context của project, điều này có nghĩa là notification thực sự làm tăng conversion rate nhưng thí nghiệm không phát hiện được sự gia tăng này. Statistical Power được định nghĩa là: $Power = 1-\beta$
 
 Do đó: $\beta = 1-Power$
 
