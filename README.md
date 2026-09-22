@@ -296,7 +296,42 @@ Vì $$0$$ không nằm trong khoảng confidence interval, vậy nên có thể 
   Do đó, đây là ước lượng dựa trên giả định, không phải giá trị incremental deposit được quan sát trực tiếp trong thí nghiệm.
   
 11. Đưa ra định hướng kinh doanh:
-* Đánh giá liệu chiến dịch có nên được triển khai rộng hơn hay không.
-* Đề xuất hướng tối ưu chiến dịch dựa trên kết quả A/B Testing.
+
+11.1. Đánh giá khả năng triển khai chiến dịch
+
+Kết quả A/B Testing cho thấy nhóm Treatment có conversion rate cao hơn nhóm Control 9.3 percentage points, tương ứng với relative lift khoảng 48.5%. Khoảng tin cậy 95% cho mức tăng conversion nằm trong khoảng 8.4–10.2 percentage points.
+
+Bên cạnh đó, khách hàng thuộc nhóm Treatment có mức tiền gửi trung bình cao hơn nhóm Control khoảng 2.006 triệu VNĐ, với khoảng tin cậy 95% cho mức chênh lệch nằm trong khoảng 1.730–2.282 triệu VNĐ.
+
+Dựa trên các kết quả này, chiến dịch notification cho thấy hiệu quả tích cực đối với cả khả năng chuyển đổi và giá trị tiền gửi trung bình trong phạm vi thí nghiệm.
+
+Tuy nhiên, trước khi triển khai trên toàn bộ khách hàng, ngân hàng cần thực hiện thêm Cost–Benefit Analysis để so sánh chi phí triển khai chiến dịch với giá trị tài chính gia tăng. Incremental deposit trong project hiện được ước tính khoảng 19.33 tỷ VNĐ, nhưng đây là một ước lượng dựa trên giả định về mức tiền gửi trung bình của các khách hàng chuyển đổi thêm, không phải giá trị được quan sát trực tiếp.
+
+11.2. Đề xuất triển khai theo từng giai đoạn
+
+Thay vì triển khai ngay trên toàn bộ khách hàng, có thể áp dụng chiến lược controlled rollout:
+
+Mở rộng Treatment trên một tỷ lệ khách hàng lớn hơn nhưng vẫn duy trì một nhóm Control.
+
+Theo dõi conversion rate, average deposit, total deposit và chi phí trên mỗi conversion.
+
+Đánh giá ROI và incremental deposit trong giai đoạn triển khai mở rộng.
+
+Nếu hiệu quả được duy trì và lợi ích tài chính vượt chi phí triển khai, có thể tiếp tục mở rộng chiến dịch.
+
+11.3. Đề xuất tối ưu chiến dịch
+
+Các A/B Test tiếp theo có thể tập trung vào việc tối ưu cách thức triển khai notification:
+
+Notification content: So sánh các nội dung và thông điệp khác nhau.
+
+Notification timing: Kiểm tra các thời điểm gửi khác nhau để tìm thời điểm có conversion rate cao hơn.
+
+Customer segmentation: Phân tích treatment effect theo các nhóm khách hàng dựa trên income, age, monthly spending hoặc các đặc điểm hành vi khác.
+
+Personalization: Kiểm tra liệu notification được cá nhân hóa theo đặc điểm khách hàng có tạo ra hiệu quả tốt hơn notification chung hay không.
+
+Mục tiêu của các thử nghiệm tiếp theo không chỉ là xác định liệu chiến dịch có hiệu quả hay không, mà còn xác định chiến dịch nên được gửi cho ai, với nội dung nào và vào thời điểm nào để tối ưu hóa hiệu quả kinh doanh.
+
 ## Ghi chú
 Project trình bày cách giải quyết bài toán bằng Data/Statistics, chứ chưa chứng minh rằng con số 9.3 pp sẽ xảy ra trong một chiến dịch ngân hàng thật, vì bộ dữ liệu của project là synthetic data
