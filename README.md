@@ -272,8 +272,6 @@ Với độ tin cậy 95%, mức chênh lệch trung bình tiền gửi giữa T
 
 Vì $$0$$ không nằm trong khoảng confidence interval, vậy nên có thể bác bỏ giả thuyết $$H_0$$
 
-* Đánh giá magnitude của treatment effect.
-
 10. Business Impact Analysis
 * So sánh tổng tiền gửi và tiền gửi trung bình.
 
