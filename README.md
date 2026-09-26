@@ -36,7 +36,6 @@ pip install matplotlib numpy pandas statsmodels scipy
 
 <img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/26a1f3e0-fe0f-4d4e-be28-e42cfcb6356a" />
 
-
 6. Kiểm tra sự cân đối giữa Control và Treatment
 
 * Kiểm tra quy mô hai nhóm.
@@ -53,7 +52,6 @@ Balance Check: Các đặc điểm ban đầu giữa hai nhóm Control và Treat
 
 Phân bổ ngẫu nhiên được giả định trong thiết kế thử nghiệm tổng hợp. Các bước kiểm tra tính cân bằng được thực hiện để đánh giá xem nhóm Kiểm chứng (Control) và nhóm Thử nghiệm (Treatment) có khả năng so sánh được với nhau dựa trên các đặc điểm nền tảng đã quan sát hay không.
 
-* Đảm bảo sự khác biệt về conversion không đơn thuần đến từ sự khác biệt ban đầu giữa hai nhóm.
 6. Phân tích dữ liệu:
 * Tính conversion rate của Control và Treatment.
 
@@ -236,7 +234,7 @@ Với target statistical power là 80%: $\beta = 1-0.8 = 0.2 = 20%$
 
 Target Power = 80% → target Type II Error $\beta = 20%$.
 
-Achieved Power $\approx$ 99.9% → achieved Type II Error ($\beta \approx 0.1%$ tại effect size được quan sát.
+Achieved Power $\approx$ $0.999$ → achieved Type II Error ($\beta$) %\approx% %0.001$ tại effect size được quan sát.
 
 Điều này cho thấy với sample size hiện tại, thí nghiệm có statistical power rất cao để phát hiện effect size ở mức quan sát được.
 
