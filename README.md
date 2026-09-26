@@ -32,9 +32,9 @@ pip install matplotlib numpy pandas statsmodels scipy
 4. EDA: Trực quan hóa và so sánh phân phối của các biến giữa Control và Treatment.
 <img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/bcfc8d18-0546-4796-8d94-386d993915a8" />
 
-<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/c6a898b7-59a1-498b-bb14-80ca7fa7bb0f" />
+<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/c6a898b7-59a1-498b-bb14-80ca7fa7bb0f" />
 
-<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/26a1f3e0-fe0f-4d4e-be28-e42cfcb6356a" />
+<img width="600" height="300" alt="image" src="https://github.com/user-attachments/assets/26a1f3e0-fe0f-4d4e-be28-e42cfcb6356a" />
 
 
 6. Kiểm tra sự cân đối giữa Control và Treatment
