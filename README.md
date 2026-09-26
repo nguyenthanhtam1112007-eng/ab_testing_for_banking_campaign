@@ -230,9 +230,9 @@ Type II Error xảy ra khi không bác bỏ $H_0$ trong khi $H_1$ thực tế đ
 
 Do đó: $\beta = 1-Power$
 
-Với target statistical power là 80%: $\beta = 1-0.8 = 0.2 = 20%$
+Với target statistical power là 0.8: $\beta = 1-0.8 = 0.2$
 
-Target Power = 80% → target Type II Error $\beta = 20%$.
+Target Power = 0.8 → target Type II Error $\beta = 0.2$.
 
 Achieved Power $\approx$ $0.999$ → achieved Type II Error ($\beta$) %\approx% %0.001$ tại effect size được quan sát.
 
@@ -337,6 +337,6 @@ Personalization: Kiểm tra liệu notification được cá nhân hóa theo đ�
 Mục tiêu của các thử nghiệm tiếp theo không chỉ là xác định liệu chiến dịch có hiệu quả hay không, mà còn xác định chiến dịch nên được gửi cho ai, với nội dung nào và vào thời điểm nào để tối ưu hóa hiệu quả kinh doanh.
 
 ## Ghi chú
-Project trình bày cách giải quyết bài toán bằng Data/Statistics, chứ chưa chứng minh rằng con số 9.3 pp sẽ xảy ra trong một chiến dịch ngân hàng thật, vì bộ dữ liệu của project là synthetic data
+Project trình bày cách giải quyết bài toán bằng Data/Statistics, chứ chưa chứng minh rằng con số 9.3 percentage points sẽ xảy ra trong một chiến dịch ngân hàng thật, vì bộ dữ liệu của project là synthetic data
 
 Statistical Power Analysis ở mục 9 được thực hiện cho thí nghiệm 7.1 – Conversion Rate (two-proportion test). Đối với thí nghiệm 7.2 – Deposit Amount, project tập trung vào Welch's Two-Sample T-Test và 95% Confidence Interval; Power Analysis không được trình bày chi tiết nhằm giữ phạm vi phân tích tập trung và tránh kéo dài phần trình bày.
