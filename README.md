@@ -30,7 +30,9 @@ pip install matplotlib numpy pandas statsmodels scipy
 | | Std. Dev. | $4.96$ | $5.02$ |
 
 4. EDA: Trực quan hóa và so sánh phân phối của các biến giữa Control và Treatment.
-5. Kiểm tra sự cân đối giữa Control và Treatment
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/bcfc8d18-0546-4796-8d94-386d993915a8" />
+
+6. Kiểm tra sự cân đối giữa Control và Treatment
 
 * Kiểm tra quy mô hai nhóm.
 
