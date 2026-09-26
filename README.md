@@ -194,9 +194,9 @@ Vậy bác bỏ giả thuyết $H_0$ rằng trung bình tiền gửi trong tài 
 
 9.1. Sample Size
 
-   Control: $15505$
+   Control: $17505$
    
-   Treatment: $15495$
+   Treatment: $17495$
    
    Total: $35000$
    
