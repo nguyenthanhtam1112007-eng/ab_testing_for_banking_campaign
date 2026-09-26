@@ -234,7 +234,7 @@ Với target statistical power là 0.8: $\beta = 1-0.8 = 0.2$
 
 Target Power = 0.8 → target Type II Error $\beta = 0.2$.
 
-Achieved Power $\approx$ $0.999$ → achieved Type II Error ($\beta$) %\approx% %0.001$ tại effect size được quan sát.
+Achieved Power $\approx$ $0.999$ → achieved Type II Error ($\beta$) $\approx$ $0.001$ tại effect size được quan sát.
 
 Điều này cho thấy với sample size hiện tại, thí nghiệm có statistical power rất cao để phát hiện effect size ở mức quan sát được.
 
