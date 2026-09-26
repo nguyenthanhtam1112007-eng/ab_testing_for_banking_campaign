@@ -333,3 +333,5 @@ Mục tiêu của các thử nghiệm tiếp theo không chỉ là xác định 
 
 ## Ghi chú
 Project trình bày cách giải quyết bài toán bằng Data/Statistics, chứ chưa chứng minh rằng con số 9.3 pp sẽ xảy ra trong một chiến dịch ngân hàng thật, vì bộ dữ liệu của project là synthetic data
+
+Statistical Power Analysis ở mục 9 được thực hiện cho thí nghiệm 7.1 – Conversion Rate (two-proportion test). Đối với thí nghiệm 7.2 – Deposit Amount, project tập trung vào Welch's Two-Sample T-Test và 95% Confidence Interval; Power Analysis không được trình bày chi tiết nhằm giữ phạm vi phân tích tập trung và tránh kéo dài phần trình bày.
